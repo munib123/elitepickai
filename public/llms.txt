@@ -1,0 +1,55 @@
+# ElitePick Ai by Muneeb Shafiq
+
+> Freelance Data Scientist & AI Engineer specializing in Power BI dashboards,
+> n8n workflow automation, custom AI chatbots, and machine learning solutions.
+
+## Quick Links
+
+- Homepage: https://elitepickai.com
+- Projects: https://elitepickai.com/projects
+- Services: https://elitepickai.com/services
+- Tools: https://elitepickai.com/tools
+- About: https://elitepickai.com/about
+- Contact: https://elitepickai.com/contact
+- Full Content: https://elitepickai.com/llms-full.txt
+
+## Services Offered
+
+1. Power BI Dashboard Development - Transform raw data into executive-ready dashboards
+2. Tableau Consulting - Professional-grade data stories for stakeholders
+3. Data Cleaning & Preparation - Turn messy data into analysis-ready assets
+4. Exploratory Data Analysis - Discover patterns and insights in your data
+5. Custom AI Chatbot Development - RAG-powered conversational AI
+6. LLM Fine-Tuning Services - Domain-specific AI customization
+7. Machine Learning Engineering - Predictive models for fraud detection, churn, forecasting
+8. Python Automation & Scripting - Eliminate repetitive tasks
+
+## Featured Projects (9 Total)
+
+1. KYC Analytics Dashboard - Compliance analytics for 176K+ records using Python/Pandas
+2. Operations Data Pipeline - ETL automation for 50+ facility locations with Power BI
+3. AI Travel Assistant - LLM-powered itinerary generation with Groq API
+4. Chicago Crime Analysis - Public safety analytics with geospatial visualization
+5. Developer Survey Analysis - Statistical insights from survey data
+6. Credit Card Transaction Analytics - Financial pattern detection
+7. Loan Sherlock - ML fraud detection achieving 97% accuracy
+8. DocSpeak RAG System - Document Q&A using RAG architecture with Gemini API
+9. AI Job Application Bot - n8n + LangChain automation for job applications
+
+## Tools & Expertise
+
+- Power BI Dashboard Services - Custom DAX, real-time data, mobile-responsive
+- n8n Workflow Automation - 300+ workflows deployed, 50K+ tasks automated monthly
+
+## Blog (Pillar-Cluster SEO Model)
+
+### Power BI Category
+- Pillar: Ultimate Guide to Custom Power BI Dashboards — https://elitepickai.com/blog/power-bi/ultimate-guide-custom-dashboards
+- Cluster: How to Build a Sales Dashboard in Power BI from Scratch — https://elitepickai.com/blog/power-bi/build-sales-dashboard-tutorial
+
+## Contact
+
+- Fiverr: https://www.fiverr.com/elitepick_ai
+- GitHub: https://github.com/munib123
+- LinkedIn: https://www.linkedin.com/in/muneeb-zehel/
+- Email: muneebzehel@gmail.com
