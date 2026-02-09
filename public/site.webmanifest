@@ -1,21 +1,24 @@
 {
-  "name": "ElitePick Ai",
-  "short_name": "ElitePick Ai",
-  "description": "Data Science & AI Solutions by Muneeb Shafiq",
+  "name": "ElitePick AI",
+  "short_name": "ElitePick",
+  "description": "AI Engineering & Data Science Solutions by Muneeb Shafiq",
   "icons": [
     {
-      "src": "/favicon.png",
+      "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
-      "src": "/favicon.png",
+      "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-  "theme_color": "#1e3a5f",
-  "background_color": "#1e3a5f",
+  "theme_color": "#18a5f3",
+  "background_color": "#18a5f3",
   "display": "standalone",
-  "start_url": "/"
+  "start_url": "/",
+  "scope": "/"
 }

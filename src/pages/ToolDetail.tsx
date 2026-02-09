@@ -47,7 +47,7 @@ const ToolDetail = () => {
     "areaServed": "Worldwide",
     "priceRange": tool.pricing[0]?.price || "$150 - $1200+",
     "url": `https://elitepickai.com/tools/${tool.slug}`,
-    "image": "https://elitepickai.com/favicon.png",
+    "image": "https://elitepickai.com/favicon-96x96.png",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5",
