@@ -16,7 +16,7 @@ interface SEOHelmetProps {
 const BASE_URL = "https://elitepickai.com";
 const SITE_NAME = "ElitePick AI";
 const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`;
-const DEFAULT_AUTHOR = "Muneeb Shafiq";
+const DEFAULT_AUTHOR = "ElitePick AI";
 
 const SEOHelmet = ({
   title,

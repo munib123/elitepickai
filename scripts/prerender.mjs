@@ -95,13 +95,13 @@ const projects = [
 const services = [
   {
     slug: 'power-bi-dashboard-expert',
-    title: 'Freelance Power BI Dashboard Expert',
+    title: 'Power BI Dashboard Expert',
     headline: 'Transform Your Raw Data Into Executive-Ready Visual Intelligence',
     description: 'Custom Power BI dashboard development for business intelligence and data visualization.',
   },
   {
     slug: 'tableau-consultant',
-    title: 'Tableau Consultant for Hire',
+    title: 'Tableau Consulting Services',
     headline: 'Professional-Grade Data Stories That Impress Stakeholders',
     description: 'Expert Tableau dashboard development and data visualization consulting.',
   },
@@ -165,8 +165,8 @@ const tools = [
 function generateHomeContent() {
   return `
     <header>
-      <h1>Freelance Data Scientist & AI Engineer | ElitePick AI</h1>
-      <p>Transform raw data into actionable insights. Hire a top-rated Data Scientist for Power BI Dashboards, Custom AI Chatbots, and Python Automation.</p>
+      <h1>Your Data Science & AI Agency | ElitePick AI</h1>
+      <p>Transform raw data into actionable insights. Partner with a top-rated AI & Data Science Agency for Power BI Dashboards, Custom AI Chatbots, and Python Automation.</p>
     </header>
     <main>
       <section>
@@ -207,12 +207,12 @@ function generateHomeContent() {
 function generateAboutContent() {
   return `
     <header>
-      <h1>About Muneeb Shafiq - Freelance Data Scientist & AI Engineer</h1>
+      <h1>About ElitePick AI - AI & Data Science Agency</h1>
     </header>
     <main>
       <section>
         <h2>Professional Background</h2>
-        <p>Freelance Data Scientist and AI Engineer specializing in Power BI dashboards, machine learning, and custom AI solutions. Helping businesses transform data into actionable insights.</p>
+        <p>AI & Data Science Agency specializing in Power BI dashboards, machine learning, and custom AI solutions. Helping businesses transform data into actionable insights.</p>
       </section>
       <section>
         <h2>Certifications</h2>
@@ -368,7 +368,7 @@ function generateToolDetailContent(tool) {
 function generateContactContent() {
   return `
     <header>
-      <h1>Contact - Hire a Freelance Data Scientist</h1>
+      <h1>Contact ElitePick AI - AI & Data Science Agency</h1>
     </header>
     <main>
       <section>

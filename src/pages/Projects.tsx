@@ -10,7 +10,7 @@ const ProjectsPage = () => {
   return (
     <Layout>
       <SEOHelmet
-        title="AI & Data Science Portfolio | Projects by Muneeb Shafiq | ElitePick AI"
+        title="AI & Data Science Portfolio | Project Case Studies | ElitePick AI"
         description="Explore real-world AI and data science projects: KYC analytics dashboards, AI travel assistants, crime analysis, and facility operations pipelines."
         canonical="https://elitepickai.com/projects"
         ogType="website"
@@ -26,7 +26,7 @@ const ProjectsPage = () => {
               <span className="text-gradient">Case Studies</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Real projects, real results. Explore how I've helped businesses solve data challenges and achieve measurable outcomes using the STAR format.
+              Real projects, real results. Explore how we've helped businesses solve data challenges and achieve measurable outcomes using the STAR format.
             </p>
           </div>
         </div>
@@ -65,7 +65,7 @@ const ProjectsPage = () => {
             Need a Similar Solution?
           </h2>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            I can build custom dashboards, data pipelines, AI systems, and analytics solutions for your business.
+            We can build custom dashboards, data pipelines, AI systems, and analytics solutions for your business.
           </p>
           <a
             href="https://www.fiverr.com/s/bdXwDDa"
@@ -73,7 +73,7 @@ const ProjectsPage = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors rounded-lg"
           >
-            Hire Me on Fiverr
+            Get Started on Fiverr
           </a>
         </div>
       </section>

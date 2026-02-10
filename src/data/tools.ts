@@ -347,15 +347,15 @@ export const tools: Tool[] = [
       },
       {
         question: 'Do I need a Power BI license?',
-        answer: 'For viewing dashboards I send you as files (.pbix), Power BI Desktop is free. For sharing dashboards with your team via Power BI Service, you\'ll need Power BI Pro ($10/user/month) or Premium licenses.'
+        answer: 'For viewing dashboards we send you as files (.pbix), Power BI Desktop is free. For sharing dashboards with your team via Power BI Service, you\'ll need Power BI Pro ($10/user/month) or Premium licenses.'
       },
       {
         question: 'Can you update existing dashboards I already have?',
-        answer: 'Absolutely! I can optimize, redesign, or extend your existing Power BI dashboards. Often, a refresh can dramatically improve performance and usability without starting from scratch.'
+        answer: 'Absolutely! We can optimize, redesign, or extend your existing Power BI dashboards. Often, a refresh can dramatically improve performance and usability without starting from scratch.'
       },
       {
         question: 'What if I need changes after delivery?',
-        answer: 'Each package includes revision rounds. Beyond that, I offer ongoing support packages, or you can request ad-hoc changes as needed. I also provide documentation so your team can make simple updates themselves.'
+        answer: 'Each package includes revision rounds. Beyond that, we offer ongoing support packages, or you can request ad-hoc changes as needed. We also provide documentation so your team can make simple updates themselves.'
       }
     ],
     ctaBannerImage: powerbiCtaBanner,

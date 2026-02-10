@@ -1,6 +1,6 @@
-# ElitePick Ai by Muneeb Shafiq
+# ElitePick AI
 
-> Freelance Data Scientist & AI Engineer specializing in Power BI dashboards,
+> AI & Data Science Agency specializing in Power BI dashboards,
 > n8n workflow automation, custom AI chatbots, and machine learning solutions.
 
 ## Quick Links

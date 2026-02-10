@@ -20,7 +20,7 @@ export const services: Service[] = [
   {
     id: '1',
     slug: 'power-bi-dashboard-expert',
-    title: 'Freelance Power BI Dashboard Expert',
+    title: 'Power BI Dashboard Expert',
     headline: 'Transform Your Raw Data Into Executive-Ready Visual Intelligence',
     cluster: 'data-analytics',
     seoKeywords: ['Power BI Dashboard', 'Business Intelligence Expert', 'KPI Dashboard Developer', 'Interactive Sales Dashboard', 'Power BI Consultant', 'Data Visualization Specialist', 'Executive Dashboard Design', 'DAX Formula Expert'],
@@ -32,7 +32,7 @@ export const services: Service[] = [
       'Making decisions based on gut feeling instead of clear data visualization',
       'Competitors using data dashboards while you\'re stuck with static reports'
     ],
-    description: 'Stop drowning in spreadsheets and start making data-driven decisions in seconds. As a specialized Power BI Dashboard Expert, I transform your raw business data into stunning, interactive dashboards that tell the story your numbers are hiding. Every dashboard I create is designed with your end-users in mind. Executives get high-level overviews with drill-down capability. Managers get real-time metrics they can act on immediately.',
+    description: 'Stop drowning in spreadsheets and start making data-driven decisions in seconds. As a specialized Power BI Dashboard team, we transform your raw business data into stunning, interactive dashboards that tell the story your numbers are hiding. Every dashboard we create is designed with your end-users in mind. Executives get high-level overviews with drill-down capability. Managers get real-time metrics they can act on immediately.',
     deliverables: [
       'Custom-designed interactive Power BI dashboard tailored to your specific KPIs',
       'Data connection setup to your existing sources (Excel, SQL, CSV, cloud services)',
@@ -41,7 +41,7 @@ export const services: Service[] = [
       'User training documentation or video walkthrough',
       '30 days of post-delivery support for adjustments'
     ],
-    whyChooseMe: 'With proven experience building dashboards for operations management across 50+ facility locations, financial transaction analysis, and urban crime pattern visualization, I understand that a dashboard is only valuable if it answers your specific business questions.',
+    whyChooseMe: 'With proven experience building dashboards for operations management across 50+ facility locations, financial transaction analysis, and urban crime pattern visualization, we understand that a dashboard is only valuable if it answers your specific business questions.',
     relatedProjects: ['facility-cleaning-operations', 'chicago-crime-analysis', 'credit-card-transaction'],
     pricing: 'Basic dashboards start at $100, with enterprise solutions available for complex multi-department requirements.',
     fiverrLink: 'https://www.fiverr.com/s/lj4XQKg',
@@ -50,7 +50,7 @@ export const services: Service[] = [
   {
     id: '2',
     slug: 'tableau-consultant',
-    title: 'Tableau Consultant for Hire',
+    title: 'Tableau Consulting Services',
     headline: 'Professional-Grade Data Stories That Impress Stakeholders and Drive Decisions',
     cluster: 'data-analytics',
     seoKeywords: ['Tableau Expert', 'Tableau Dashboard Developer', 'Data Visualization Consultant', 'SQL to Tableau Integration', 'Automated Data Reporting', 'Tableau for Executives', 'Interactive Data Stories'],
@@ -62,7 +62,7 @@ export const services: Service[] = [
       'Data exists in SQL databases but nobody can connect it properly to Tableau',
       'Current dashboards are slow, cluttered, or don\'t answer the right questions'
     ],
-    description: 'Your Tableau investment should be generating insights, not frustration. As a dedicated Tableau Consultant, I help organizations unlock the full potential of their Tableau platform by building dashboards that are not only visually stunning but analytically powerful.',
+    description: 'Your Tableau investment should be generating insights, not frustration. As a dedicated Tableau Consulting team, we help organizations unlock the full potential of their Tableau platform by building dashboards that are not only visually stunning but analytically powerful.',
     deliverables: [
       'Custom Tableau dashboard with interactive filters and parameters',
       'SQL query optimization for faster dashboard performance',
@@ -71,7 +71,7 @@ export const services: Service[] = [
       'Tableau Server/Cloud publishing and permission setup',
       'Documentation and optional training session'
     ],
-    whyChooseMe: 'My experience spans from survey trend analysis with rich statistical visualizations to operational KPI tracking across enterprise environments.',
+    whyChooseMe: 'Our experience spans from survey trend analysis with rich statistical visualizations to operational KPI tracking across enterprise environments.',
     relatedProjects: ['developers-survey-analysis', 'kyc-verification-analytics'],
     pricing: 'Tableau consulting is priced based on dashboard complexity and data source integration requirements.',
     fiverrLink: 'https://www.fiverr.com/s/lj4XQKg',
@@ -92,7 +92,7 @@ export const services: Service[] = [
       'Data import keeps failing due to formatting errors',
       'Need to merge multiple files but columns don\'t align'
     ],
-    description: 'Messy data isn\'t just annoying—it\'s expensive. Every hour you spend manually fixing spreadsheets is an hour you\'re not spending on analysis, strategy, or growth. I eliminate that problem completely by transforming your chaotic, inconsistent datasets into clean, structured, analysis-ready assets.',
+    description: 'Messy data isn\'t just annoying—it\'s expensive. Every hour you spend manually fixing spreadsheets is an hour you\'re not spending on analysis, strategy, or growth. We eliminate that problem completely by transforming your chaotic, inconsistent datasets into clean, structured, analysis-ready assets.',
     deliverables: [
       'Fully cleaned and formatted dataset in your preferred format (Excel, CSV, etc.)',
       'Data quality report documenting issues found and fixes applied',
@@ -101,7 +101,7 @@ export const services: Service[] = [
       'Missing value handling (removal, imputation, or flagging)',
       'Optional: Python script for repeatable cleaning on future data'
     ],
-    whyChooseMe: 'I\'ve cleaned datasets with hundreds of thousands of records, handled multi-source data integration challenges, and built automated cleaning pipelines that save hours of manual work.',
+    whyChooseMe: 'We\'ve cleaned datasets with hundreds of thousands of records, handled multi-source data integration challenges, and built automated cleaning pipelines that save hours of manual work.',
     relatedProjects: ['kyc-verification-analytics', 'facility-cleaning-operations', 'chicago-crime-analysis'],
     pricing: 'Quick Excel cleanups start at $100, while complex multi-source data preparation projects are quoted individually.',
     fiverrLink: 'https://www.fiverr.com/s/7Y8NZZx',
@@ -131,7 +131,7 @@ export const services: Service[] = [
       'Missing data analysis and recommendations',
       'Jupyter notebook with all code for reproducibility (optional)'
     ],
-    whyChooseMe: 'From analyzing 176,000+ verification records for compliance patterns to extracting insights from developer surveys, I\'ve performed EDA on diverse datasets across industries.',
+    whyChooseMe: 'From analyzing 176,000+ verification records for compliance patterns to extracting insights from developer surveys, we\'ve performed EDA on diverse datasets across industries.',
     relatedProjects: ['kyc-verification-analytics', 'developers-survey-analysis'],
     pricing: 'Standard analysis reports start at $150, with premium packages including advanced statistical testing.',
     fiverrLink: 'https://www.fiverr.com/s/7Y8NZZx',
@@ -152,7 +152,7 @@ export const services: Service[] = [
       'Need 24/7 support coverage without hiring night shifts',
       'Competitors launching AI features while you\'re still researching'
     ],
-    description: 'Generic chatbots give generic answers. Your business deserves an AI assistant that actually knows your products, your policies, your documents, and your customers. I build custom AI chatbots powered by cutting-edge Large Language Models (LLMs) that are trained on YOUR data.',
+    description: 'Generic chatbots give generic answers. Your business deserves an AI assistant that actually knows your products, your policies, your documents, and your customers. We build custom AI chatbots powered by cutting-edge Large Language Models (LLMs) that are trained on YOUR data.',
     deliverables: [
       'Custom-trained AI chatbot tailored to your specific use case',
       'RAG implementation with your documents/knowledge base',
@@ -162,7 +162,7 @@ export const services: Service[] = [
       'Deployment and hosting setup',
       'Usage documentation and maintenance guide'
     ],
-    whyChooseMe: 'I\'ve built AI assistants ranging from autonomous travel planning agents deployed on Hugging Face Spaces to document Q&A systems that make PDFs conversationally searchable.',
+    whyChooseMe: 'We\'ve built AI assistants ranging from autonomous travel planning agents deployed on Hugging Face Spaces to document Q&A systems that make PDFs conversationally searchable.',
     relatedProjects: ['tour-planning-ai-assistant', 'docspeak-rag'],
     pricing: 'Simple FAQ bots start at $100, while enterprise RAG systems with custom integrations are quoted based on scope.',
     fiverrLink: 'https://www.fiverr.com/s/AyAErkq',
@@ -192,7 +192,7 @@ export const services: Service[] = [
       'Deployment setup (API endpoint or local hosting)',
       'Documentation on model usage and limitations'
     ],
-    whyChooseMe: 'My experience with Hugging Face models, Groq API for fast inference, and building production AI applications gives me end-to-end expertise in the LLM ecosystem.',
+    whyChooseMe: 'Our experience with Hugging Face models, Groq API for fast inference, and building production AI applications gives us end-to-end expertise in the LLM ecosystem.',
     relatedProjects: ['tour-planning-ai-assistant', 'docspeak-rag'],
     pricing: 'Fine-tuning projects are priced based on model type, training data volume, and complexity.',
     fiverrLink: 'https://www.fiverr.com/s/AyAErkq',
@@ -213,7 +213,7 @@ export const services: Service[] = [
       'Competitors using predictive analytics while you react to events',
       'Have historical data but don\'t know how to use it for predictions'
     ],
-    description: 'What if you could predict which customers will churn before they leave? Which loan applications are likely to default? Which transactions are probably fraudulent? Machine learning makes this possible—and I make it accessible.',
+    description: 'What if you could predict which customers will churn before they leave? Which loan applications are likely to default? Which transactions are probably fraudulent? Machine learning makes this possible—and we make it accessible.',
     deliverables: [
       'Trained and validated machine learning model for your prediction task',
       'Feature engineering pipeline to prepare your data for the model',
@@ -222,7 +222,7 @@ export const services: Service[] = [
       'API endpoint for integration with your systems (optional)',
       'Model documentation and interpretation guide'
     ],
-    whyChooseMe: 'I\'ve built production fraud detection systems achieving 97% accuracy, demonstrating both the technical skills to engineer high-performing models and the practical judgment to deliver solutions that work.',
+    whyChooseMe: 'We\'ve built production fraud detection systems achieving 97% accuracy, demonstrating both the technical skills to engineer high-performing models and the practical judgment to deliver solutions that work.',
     relatedProjects: ['loan-sherlock-fraud-detection'],
     pricing: 'Simple classification models start at $100, with complex production systems requiring custom quotes.',
     fiverrLink: 'https://www.fiverr.com/s/AyAErkq',
@@ -234,7 +234,7 @@ export const services: Service[] = [
     title: 'Python Automation & Scripting',
     headline: 'Eliminate Repetitive Tasks and Reclaim Hours of Your Week',
     cluster: 'ai-ml',
-    seoKeywords: ['Python Automation', 'Workflow Automation', 'Web Scraping Freelancer', 'API Connector Script', 'Automate Daily Tasks', 'Python Script Developer', 'Data Pipeline Automation'],
+    seoKeywords: ['Python Automation', 'Workflow Automation', 'Web Scraping Services', 'API Connector Script', 'Automate Daily Tasks', 'Python Script Developer', 'Data Pipeline Automation'],
     targetClient: 'Professionals drowning in repetitive tasks—data entry, report generation, file processing, web data collection, system integrations.',
     painPoints: [
       'Spending hours on tasks that feel like they should be automated',
@@ -243,7 +243,7 @@ export const services: Service[] = [
       'Different tools don\'t talk to each other, creating manual workarounds',
       'Report generation is a weekly time sink that never gets easier'
     ],
-    description: 'How many hours last week did you spend on tasks a computer should be doing for you? Data entry. Report generation. File organization. Web research. I build custom Python scripts that automate your specific workflows, no matter how unique.',
+    description: 'How many hours last week did you spend on tasks a computer should be doing for you? Data entry. Report generation. File organization. Web research. We build custom Python scripts that automate your specific workflows, no matter how unique.',
     deliverables: [
       'Custom Python script tailored to your specific automation need',
       'Error handling and logging for reliable unattended operation',
@@ -252,7 +252,7 @@ export const services: Service[] = [
       'Testing and validation with your actual data/systems',
       '30 days of support for adjustments and bug fixes'
     ],
-    whyChooseMe: 'From building end-to-end data pipelines processing records from 50+ locations to automated analysis workflows handling hundreds of thousands of records, I\'ve engineered automation solutions that operate reliably in production.',
+    whyChooseMe: 'From building end-to-end data pipelines processing records from 50+ locations to automated analysis workflows handling hundreds of thousands of records, we\'ve engineered automation solutions that operate reliably in production.',
     relatedProjects: ['kyc-verification-analytics', 'facility-cleaning-operations', 'loan-sherlock-fraud-detection'],
     pricing: 'Simple scripts start at $100, with complex multi-system automation workflows priced individually.',
     fiverrLink: 'https://www.fiverr.com/s/AyAErkq',

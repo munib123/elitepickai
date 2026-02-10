@@ -31,7 +31,7 @@ const Header = ({ onStartTour }: HeaderProps) => {
     name: 'About',
     href: '/about'
   }, {
-    name: 'Hire Me',
+    name: 'Contact Us',
     href: '/contact'
   }];
   const isActive = (href: string) => {
@@ -93,7 +93,7 @@ const Header = ({ onStartTour }: HeaderProps) => {
               <div className="flex flex-col gap-2 mt-2">
                 <Button asChild variant="outline">
                   <a href="https://www.fiverr.com/s/bdXwDDa" target="_blank" rel="noopener noreferrer">
-                    Hire Me on Fiverr
+                    Order on Fiverr
                   </a>
                 </Button>
                 <Button asChild className="bg-primary text-primary-foreground">

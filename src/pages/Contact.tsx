@@ -65,8 +65,8 @@ const ContactPage = () => {
     return (
       <Layout>
         <SEOHelmet
-          title="Contact Muneeb Shafiq | Message Sent — ElitePick AI"
-          description="Thank you for contacting Muneeb Shafiq at ElitePick AI. We'll get back to you within 24 hours."
+          title="Contact Us | Message Sent — ElitePick AI"
+          description="Thank you for contacting ElitePick AI. We'll get back to you within 24 hours."
           canonical="https://elitepickai.com/contact"
         />
         <div className="min-h-[70vh] flex items-center justify-center">
@@ -76,7 +76,7 @@ const ContactPage = () => {
             </div>
             <h1 className="text-3xl font-bold text-foreground mb-4">Message Sent!</h1>
             <p className="text-muted-foreground mb-8">
-              Thank you for reaching out. I'll get back to you within 24 hours.
+              Thank you for reaching out. We'll get back to you within 24 hours.
             </p>
             <Button onClick={() => setIsSubmitted(false)} variant="outline">
               Send Another Message
@@ -90,10 +90,10 @@ const ContactPage = () => {
   return (
     <Layout>
       <SEOHelmet
-          title="Contact Muneeb Shafiq | Hire a Freelance AI Engineer & Data Scientist"
-          description="Ready to build AI chatbots, Power BI dashboards, or ML models? Contact Muneeb Shafiq for a free consultation. Available for freelance projects worldwide."
+          title="Contact Us | AI & Data Science Agency — ElitePick AI"
+          description="Ready to build AI chatbots, Power BI dashboards, or ML models? Contact ElitePick AI for a free consultation. Available for projects worldwide."
         ogType="website"
-        keywords="Hire AI Engineer, Contact Data Scientist, AI Consultation, Freelance AI Developer"
+        keywords="Contact AI Agency, AI Consultation, Data Science Agency, ElitePick AI"
       />
 
       {/* Hero */}
@@ -105,7 +105,7 @@ const ContactPage = () => {
               <span className="text-gradient">Touch</span>
             </h1>
             <p className="text-xl text-muted-foreground">
-              Have a project in mind? Let's discuss how I can help you transform your data into actionable insights.
+              Have a project in mind? Let's discuss how we can help you transform your data into actionable insights.
             </p>
           </div>
         </div>
@@ -155,7 +155,7 @@ const ContactPage = () => {
                   <Input
                     id="subject"
                     name="subject"
-                    placeholder="How can I help you?"
+                    placeholder="How can we help you?"
                     value={formData.subject}
                     onChange={handleChange}
                   />
@@ -166,7 +166,7 @@ const ContactPage = () => {
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder="Tell me about your project, data challenges, or any questions you have..."
+                    placeholder="Tell us about your project, data challenges, or any questions you have..."
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
@@ -192,7 +192,7 @@ const ContactPage = () => {
               </form>
 
               <p className="text-sm text-muted-foreground text-center mt-6">
-                I typically respond within 24 hours. For urgent matters, you can also reach me on{' '}
+                We typically respond within 24 hours. For urgent matters, you can also reach us on{' '}
                 <a
                   href="https://www.fiverr.com/s/bdXwDDa"
                   target="_blank"

@@ -29,7 +29,7 @@ const PricingTiers = ({ pricing, fiverrLink }: PricingTiersProps) => {
             <span className="text-gradient">Engagement Packages</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Transparent pricing for every project size. All packages include my quality guarantee.
+            Transparent pricing for every project size. All packages include our quality guarantee.
           </p>
         </div>
 

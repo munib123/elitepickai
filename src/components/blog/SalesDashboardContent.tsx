@@ -89,8 +89,8 @@ const CtaBanner = ({ variant }: { variant: 'consultation' | 'fiverr' }) => {
           🚀 Need a Production-Ready Sales Dashboard?
         </h3>
         <p className="text-muted-foreground mb-4 max-w-xl mx-auto text-sm">
-          I build custom sales dashboards for businesses of all sizes. From connecting your live data sources
-          through deployment and training, I handle the entire process. My dashboards have helped clients
+          We build custom sales dashboards for businesses of all sizes. From connecting your live data sources
+          through deployment and training, we handle the entire process. Our dashboards have helped clients
           reduce reporting time from 15 hours to under 5 minutes.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
@@ -116,11 +116,11 @@ const CtaBanner = ({ variant }: { variant: 'consultation' | 'fiverr' }) => {
         </h3>
         <p className="text-muted-foreground mb-4 max-w-xl mx-auto text-sm">
           Need a single dashboard page built fast? Or have a DAX formula that is not working?
-          My Fiverr packages offer fast turnaround at transparent pricing. 4.8-star rating from 15+ completed projects.
+          Our Fiverr packages offer fast turnaround at transparent pricing. 4.8-star rating from 15+ completed projects.
         </p>
         <Button asChild>
           <a href="https://www.fiverr.com/s/lj4XQKg" target="_blank" rel="noopener noreferrer">
-            Order My Power BI Gig on Fiverr <ExternalLink className="ml-2 h-4 w-4" />
+            Order Our Power BI Packages on Fiverr <ExternalLink className="ml-2 h-4 w-4" />
           </a>
         </Button>
       </div>
@@ -158,7 +158,7 @@ const SalesDashboardContent = () => {
         </p>
 
         <p className="text-foreground/90 leading-relaxed mt-4">
-          Every technique in this tutorial comes from dashboards I have built for real clients. I will show you the exact data model,
+          Every technique in this tutorial comes from dashboards we have built for real clients. We will show you the exact data model,
           the exact DAX measures, and the exact design decisions that separate an amateur report from a professional-grade sales
           analytics tool.
         </p>
@@ -193,14 +193,14 @@ const SalesDashboardContent = () => {
           Discount, Revenue, Cost, and Profit.
         </p>
         <p className="text-sm text-foreground/90 mt-2">
-          I designed this dataset to include realistic patterns: seasonal spikes in Q4, a product category with declining margins,
+          We designed this dataset to include realistic patterns: seasonal spikes in Q4, a product category with declining margins,
           one region that consistently outperforms, and a handful of outlier orders.
         </p>
 
         <ExpertNote>
           <p className="font-semibold">💡 Prefer to Skip the Build and Get the Result?</p>
-          <p>If you want a professional sales dashboard built for your actual business data, I can have it ready in 3–5 business days.
-            Check out my <a href="https://www.fiverr.com/s/lj4XQKg" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Power BI Dashboard packages on Fiverr</a> or{' '}
+          <p>If you want a professional sales dashboard built for your actual business data, we can have it ready in 3–5 business days.
+            Check out our <a href="https://www.fiverr.com/s/lj4XQKg" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Power BI Dashboard packages on Fiverr</a> or{' '}
             <Link to="/contact" className="text-primary hover:underline">book a free consultation</Link> for custom enterprise solutions.
           </p>
         </ExpertNote>

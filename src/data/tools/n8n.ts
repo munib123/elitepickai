@@ -18,7 +18,7 @@ export const n8nTool: Tool = {
   slug: 'n8n-automation',
   title: 'n8n Expert & Workflow Automation Developer',
   headline: 'Automate Mission-Critical Workflows with Expert n8n Integrations',
-  subheadline: 'Stop paying per task. Stop wrestling with API documentation. I build powerful, self-hosted n8n automations that connect your entire tech stack—running 24/7 without the "Zapier tax" or the technical headache.',
+  subheadline: 'Stop paying per task. Stop wrestling with API documentation. We build powerful, self-hosted n8n automations that connect your entire tech stack—running 24/7 without the “Zapier tax” or the technical headache.',
   seoKeywords: [
     'n8n Expert',
     'n8n Developer',
@@ -263,7 +263,7 @@ export const n8nTool: Tool = {
     },
     {
       question: 'Do I need to host n8n myself?',
-      answer: 'No! n8n offers both options: n8n Cloud (fully managed, starting $20/month) or self-hosted on your own server for maximum control and zero per-execution costs. I can build workflows for either environment and help you choose the right option.'
+      answer: 'No! n8n offers both options: n8n Cloud (fully managed, starting $20/month) or self-hosted on your own server for maximum control and zero per-execution costs. We can build workflows for either environment and help you choose the right option.'
     },
     {
       question: 'How long does it take to build an n8n automation?',

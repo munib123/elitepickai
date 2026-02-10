@@ -71,8 +71,8 @@ const personJsonLd = {
   "alternateName": "ElitePick Ai",
   "url": `${BASE_URL}/about`,
   "image": `${BASE_URL}/og-image.jpg`,
-  "jobTitle": "Freelance Data Scientist & AI Engineer",
-  "description": "Freelance Data Scientist and AI Engineer specializing in Power BI dashboards, machine learning, and custom AI solutions.",
+  "jobTitle": "Founder & Lead AI Engineer at ElitePick AI",
+  "description": "Founder of ElitePick AI, a data science and AI agency specializing in Power BI dashboards, machine learning, and custom AI solutions.",
   "email": "muneebzehel@gmail.com",
   "sameAs": [
     "https://github.com/munib123",
@@ -152,11 +152,11 @@ const AboutPage = () => {
   return (
     <Layout>
       <SEOHelmet
-        title="About Muneeb Shafiq | AI Engineer & Freelance Data Scientist — ElitePick AI"
-        description="Learn about Muneeb Shafiq — a certified Data Scientist & AI Engineer with expertise in Power BI, TensorFlow, LangChain, and Python. IBM, Google & Microsoft certified."
+        title="About Us | Meet the Team Behind ElitePick AI"
+        description="Learn about ElitePick AI — a certified AI & data science agency with expertise in Power BI, TensorFlow, LangChain, and Python. IBM, Google & Microsoft certified."
         canonical="https://elitepickai.com/about"
         ogType="profile"
-        keywords="Muneeb Shafiq, AI Engineer, Data Scientist, Punjab University, Fiverr Freelancer, IBM Certified, Google Certified"
+        keywords="ElitePick AI, AI Agency, Data Science Agency, Punjab University, IBM Certified, Google Certified"
         structuredData={personJsonLd}
       />
 
@@ -168,16 +168,16 @@ const AboutPage = () => {
               {/* Profile Info */}
               <div className="md:col-span-2">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                  <span className="text-foreground">Hi, I'm </span>
-                  <span className="text-gradient">Muneeb Shafiq</span>
+                  <span className="text-foreground">About </span>
+                  <span className="text-gradient">ElitePick AI</span>
                 </h1>
                 
                 <p className="text-xl text-primary font-medium mb-4">
-                  Freelance Data Scientist & AI Engineer
+                  AI & Data Science Agency
                 </p>
                 
                 <p className="text-muted-foreground text-lg mb-6">
-                  I help businesses transform raw data into actionable insights and intelligent automation. Specializing in Power BI dashboards, machine learning models, and custom AI chatbots that drive real business results.
+                  We help businesses transform raw data into actionable insights and intelligent automation. Specializing in Power BI dashboards, machine learning models, and custom AI chatbots that drive real business results.
                 </p>
 
                 {/* Quick Info */}
@@ -240,7 +240,7 @@ const AboutPage = () => {
                   <Button asChild variant="outline" className="w-full">
                     <Link to="/contact">
                       <MessageSquare className="mr-2 h-4 w-4" />
-                      Contact Me
+                      Contact Us
                     </Link>
                   </Button>
                 </div>
@@ -323,7 +323,7 @@ const AboutPage = () => {
               variant="grid" 
               maxItems={6}
               title="Client Testimonials"
-              subtitle="What clients say about working with me"
+              subtitle="What clients say about working with us"
             />
           </div>
         </div>
@@ -336,7 +336,7 @@ const AboutPage = () => {
             Let's Build Something Great Together
           </h2>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Whether you need a data dashboard, ML model, or AI chatbot—I'm here to help you achieve your goals.
+            Whether you need a data dashboard, ML model, or AI chatbot—we're here to help you achieve your goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -348,12 +348,12 @@ const AboutPage = () => {
             <Button asChild variant="outline" size="lg">
               <Link to="/contact">
                 <MessageSquare className="mr-2 h-4 w-4" />
-                Contact Me
+                Contact Us
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
               <Link to="/projects">
-                View My Projects
+                View Our Projects
               </Link>
             </Button>
           </div>

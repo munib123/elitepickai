@@ -126,7 +126,7 @@ const ServiceDetailPage = () => {
                   <div className="p-2 bg-destructive/10 rounded-lg">
                     <AlertCircle className="h-5 w-5 text-destructive" />
                   </div>
-                  <h2 className="text-xl font-semibold text-foreground">Problems I Solve</h2>
+                  <h2 className="text-xl font-semibold text-foreground">Problems We Solve</h2>
                 </div>
                 <ul className="space-y-3">
                   {service.painPoints.map((point, index) => (
@@ -165,7 +165,7 @@ const ServiceDetailPage = () => {
                   <div className="p-2 bg-primary/10 rounded-lg">
                     <Star className="h-5 w-5 text-primary" />
                   </div>
-                  <h2 className="text-xl font-semibold text-foreground">Why Choose Me</h2>
+                  <h2 className="text-xl font-semibold text-foreground">Why Choose Us</h2>
                 </div>
                 <p className="text-muted-foreground">{service.whyChooseMe}</p>
               </div>
@@ -213,7 +213,7 @@ const ServiceDetailPage = () => {
                 </Button>
 
                 <Button asChild variant="ghost" className="w-full">
-                  <Link to="/contact">Have Questions? Contact Me</Link>
+                  <Link to="/contact">Have Questions? Contact Us</Link>
                 </Button>
 
                 <p className="text-xs text-center text-muted-foreground mt-4">Secure payment • Money-back guarantee</p>

@@ -155,7 +155,7 @@ ${formData.additionalInfo || 'None'}
             </div>
             <h1 className="text-3xl font-bold text-foreground mb-4">Order Request Submitted!</h1>
             <p className="text-muted-foreground mb-8">
-              Thank you for your interest! I'll review your requirements and get back to you within 24 hours with a customized proposal.
+              Thank you for your interest! We'll review your requirements and get back to you within 24 hours with a customized proposal.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild variant="outline">
@@ -174,8 +174,8 @@ ${formData.additionalInfo || 'None'}
   return (
     <Layout>
       <SEOHelmet
-        title="Direct Order | Hire AI Engineer | ElitePick AI"
-        description="Place a direct order for data science, AI, and machine learning services from ElitePick AI by Muneeb Shafiq. Skip Fiverr and work directly."
+        title="Direct Order | AI & Data Science Services | ElitePick AI"
+        description="Place a direct order for data science, AI, and machine learning services from ElitePick AI. Skip Fiverr and work directly."
         canonical="https://elitepickai.com/order"
         ogType="website"
         keywords="Direct Order, Hire Data Scientist, Custom AI Project, Machine Learning Services"
@@ -419,7 +419,7 @@ ${formData.additionalInfo || 'None'}
               </form>
 
               <p className="text-sm text-muted-foreground text-center mt-6">
-                I'll review your request and respond within 24 hours with a customized proposal. No commitment required.
+                We'll review your request and respond within 24 hours with a customized proposal. No commitment required.
               </p>
             </div>
           </div>

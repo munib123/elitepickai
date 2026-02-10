@@ -26,7 +26,7 @@ const FeatureGrid = ({ features }: FeatureGridProps) => {
             Built Different: <span className="text-gradient">Key Capabilities</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Every dashboard I build includes these powerful features as standard.
+            Every dashboard we build includes these powerful features as standard.
           </p>
         </div>
 

@@ -73,7 +73,7 @@ const CtaBanner = ({ variant }: { variant: 'consultation' | 'fiverr' }) => {
           🚀 Need a Custom Power BI Dashboard Built for Your Business?
         </h3>
         <p className="text-muted-foreground mb-4 max-w-xl mx-auto text-sm">
-          I have delivered enterprise-grade dashboards for businesses managing 50+ locations, 
+          We have delivered enterprise-grade dashboards for businesses managing 50+ locations, 
           processing thousands of daily transactions, and monitoring critical KPIs in real-time.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
@@ -119,10 +119,10 @@ const PowerBIPillarContent = () => {
 
         <p className="text-foreground/90 leading-relaxed mt-4">
           <strong>Power BI changes this equation entirely.</strong> It transforms raw, messy data into interactive, 
-          real-time dashboards that tell a story at a glance. In this comprehensive guide, I will walk you 
+          real-time dashboards that tell a story at a glance. In this comprehensive guide, we will walk you 
           through every stage of building a custom Power BI dashboard — from connecting your first data 
           source to deploying a polished, enterprise-ready report. This is not theory. Every technique in 
-          this guide comes from real-world projects I have delivered for clients managing operations 
+          this guide comes from real-world projects we have delivered for clients managing operations 
           across 50+ locations, processing thousands of financial transactions, and monitoring KPIs that 
           directly impact revenue.
         </p>
@@ -131,7 +131,7 @@ const PowerBIPillarContent = () => {
           Whether you are a business analyst building your first report, a data engineer optimizing an 
           existing pipeline, or a decision-maker evaluating whether Power BI is right for your 
           organization — this guide has something for you. And if at any point the complexity exceeds 
-          what you want to tackle yourself, I am just a <Link to="/contact" className="text-primary hover:underline">message away</Link>.
+          what you want to tackle yourself, we are just a <Link to="/contact" className="text-primary hover:underline">message away</Link>.
         </p>
       </section>
 
@@ -147,7 +147,7 @@ const PowerBIPillarContent = () => {
         </ol>
         <ExpertNote>
           <p className="font-semibold">Don't Have Time to Follow Along?</p>
-          <p>This guide is designed to teach you everything step by step. But if you need a professional dashboard built quickly, I specialize in custom Power BI development for businesses of all sizes. <Link to="/contact" className="text-primary hover:underline">Book a free consultation</Link> or check out my <a href="https://www.fiverr.com/s/lj4XQKg" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">dashboard packages on Fiverr</a>.</p>
+          <p>This guide is designed to teach you everything step by step. But if you need a professional dashboard built quickly, we specialize in custom Power BI development for businesses of all sizes. <Link to="/contact" className="text-primary hover:underline">Book a free consultation</Link> or check out our <a href="https://www.fiverr.com/s/lj4XQKg" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">dashboard packages on Fiverr</a>.</p>
         </ExpertNote>
       </section>
 
@@ -194,7 +194,7 @@ const PowerBIPillarContent = () => {
           other tool matches at this price point.
         </p>
         <p className="text-foreground/90 leading-relaxed mt-3">
-          For freelancers and consultants, Power BI has the largest client demand. Most businesses already 
+          For businesses and consultants, Power BI has the largest client demand. Most businesses already 
           have Microsoft 365, which means the barrier to adopting Power BI is nearly zero compared to a tool 
           like Tableau that requires a separate, expensive license for every viewer.
         </p>
@@ -221,7 +221,7 @@ const PowerBIPillarContent = () => {
         <h3 className="text-lg font-semibold text-foreground mt-6 mb-2">Step 1: Download and Install Power BI Desktop</h3>
         <p className="text-foreground/90 leading-relaxed">
           Head to <a href="https://powerbi.microsoft.com/desktop" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">powerbi.microsoft.com/desktop</a> and 
-          download the latest version. I recommend downloading directly from the website rather than the 
+          download the latest version. We recommend downloading directly from the website rather than the 
           Microsoft Store, as it gives you more control over updates.
         </p>
 
@@ -250,7 +250,7 @@ const PowerBIPillarContent = () => {
         </div>
 
         <ExpertNote>
-          <p><strong>Expert Note:</strong> Disabling Auto Date/Time is the single most impactful setting change you can make. The default auto date tables can double or triple your model size without you realizing it. I have seen client files go from 500MB to 150MB just by disabling this and building a proper date dimension.</p>
+          <p><strong>Expert Note:</strong> Disabling Auto Date/Time is the single most impactful setting change you can make. The default auto date tables can double or triple your model size without you realizing it. We have seen client files go from 500MB to 150MB just by disabling this and building a proper date dimension.</p>
         </ExpertNote>
 
         <ChapterImage
@@ -302,7 +302,7 @@ INNER JOIN Stores s ON t.StoreID = s.StoreID
 WHERE t.TransactionDate >= '2025-01-01'`}</CodeBlock>
 
         <ExpertNote>
-          <p><strong>Expert Note:</strong> Never use 'SELECT *' when connecting Power BI to SQL. Only pull the columns you need. Every unnecessary column increases your model size and slows down refresh times. I reduced a client's refresh time from <strong>45 minutes to 8 minutes</strong> just by optimizing the source query.</p>
+          <p><strong>Expert Note:</strong> Never use 'SELECT *' when connecting Power BI to SQL. Only pull the columns you need. Every unnecessary column increases your model size and slows down refresh times. We reduced a client's refresh time from <strong>45 minutes to 8 minutes</strong> just by optimizing the source query.</p>
         </ExpertNote>
 
         <h3 className="text-lg font-semibold text-foreground mt-6 mb-2">Step 3: Connecting to REST APIs</h3>
@@ -676,7 +676,7 @@ CONTAINS(
           Chapter 10: Real-World Case Study — From Raw Data to Executive Dashboard
         </h2>
         <p className="text-foreground/90 leading-relaxed">
-          Let me walk you through a real project I completed for a client managing facility cleaning 
+          Let me walk you through a real project we completed for a client managing facility cleaning 
           operations across <strong>50+ locations</strong>. This case study demonstrates every concept covered in 
           this guide, applied to a real business problem.
         </p>

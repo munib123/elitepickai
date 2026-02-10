@@ -55,11 +55,11 @@ const Index = ({ startTour }: IndexProps) => {
   return (
     <Layout onStartTour={startTour}>
       <SEOHelmet
-        title="ElitePick AI | Muneeb Shafiq — AI Engineer & Data Scientist for Hire"
-        description="Hire Muneeb Shafiq — a top-rated AI Engineer & Data Scientist. I build Power BI Dashboards, AI Chatbots, ML Models, RAG Systems & Python Automation. Transform your data into actionable insights."
+        title="ElitePick AI | AI & Data Science Agency — Dashboards, Chatbots & Automation"
+        description="ElitePick AI is a top-rated AI & data science agency. We build Power BI Dashboards, AI Chatbots, ML Models, RAG Systems & Python Automation. Transform your data into actionable insights."
         canonical="https://elitepickai.com/"
         ogType="website"
-        keywords="AI Engineer, Data Scientist, Freelance, Power BI, AI Chatbot, Machine Learning, Python Automation, LangChain, RAG, Muneeb Shafiq"
+        keywords="AI Agency, Data Science Agency, AI Consulting Firm, Power BI, AI Chatbot, Machine Learning, Python Automation, LangChain, RAG, ElitePick AI"
         structuredData={{
           "@context": "https://schema.org",
           "@graph": [
@@ -68,37 +68,31 @@ const Index = ({ startTour }: IndexProps) => {
               "@id": "https://elitepickai.com/#website",
               "url": "https://elitepickai.com/",
               "name": "ElitePick AI",
-              "description": "AI Engineering & Data Science Solutions by Muneeb Shafiq",
-              "publisher": { "@id": "https://elitepickai.com/#person" }
+              "description": "AI & Data Science Agency — Dashboards, Chatbots & Automation",
+              "publisher": { "@id": "https://elitepickai.com/#organization" }
             },
             {
-              "@type": "Person",
-              "@id": "https://elitepickai.com/#person",
-              "name": "Muneeb Shafiq",
-              "jobTitle": "AI Engineer & Data Scientist",
+              "@type": "Organization",
+              "@id": "https://elitepickai.com/#organization",
+              "name": "ElitePick AI",
+              "description": "AI & Data Science Agency",
               "url": "https://elitepickai.com/",
               "sameAs": [
                 "https://www.linkedin.com/in/muneeb-zehel",
                 "https://github.com/munib123",
-                "https://www.fiverr.com/muneeb_shafiq",
-                "https://muneebshafiq.me"
+                "https://www.fiverr.com/elitepick_ai"
               ],
               "knowsAbout": [
                 "Artificial Intelligence", "Machine Learning", "Data Science",
                 "Power BI", "Python", "LangChain", "RAG Systems",
                 "Natural Language Processing", "AI Chatbots", "Data Visualization"
-              ],
-              "hasCredential": [
-                { "@type": "EducationalOccupationalCredential", "name": "IBM Data Science Certificate" },
-                { "@type": "EducationalOccupationalCredential", "name": "Google Data Analytics Certificate" },
-                { "@type": "EducationalOccupationalCredential", "name": "Power BI Data Analyst - Microsoft" }
               ]
             },
             {
               "@type": "ProfessionalService",
               "@id": "https://elitepickai.com/#service",
-              "name": "ElitePick AI — Freelance AI & Data Science Services",
-              "provider": { "@id": "https://elitepickai.com/#person" },
+              "name": "ElitePick AI — AI & Data Science Services",
+              "provider": { "@id": "https://elitepickai.com/#organization" },
               "areaServed": "Worldwide",
               "serviceType": [
                 "AI Chatbot Development",
@@ -135,10 +129,10 @@ const Index = ({ startTour }: IndexProps) => {
 
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">
-              <span className="text-foreground">Freelance </span>
-              <span className="text-gradient">Data Scientist</span>
+              <span className="text-foreground">Your </span>
+              <span className="text-gradient">Data Science</span>
               <span className="text-foreground"> & </span>
-              <span className="text-gradient">AI Engineer</span>
+              <span className="text-gradient">AI Agency</span>
             </h1>
 
             {/* Subheadline */}
@@ -212,7 +206,7 @@ const Index = ({ startTour }: IndexProps) => {
               Expert <span className="text-gradient">Data & AI Services</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              From interactive dashboards that drive decisions to AI systems that automate your workflow—I deliver
+              From interactive dashboards that drive decisions to AI systems that automate your workflow—we deliver
               solutions that generate measurable ROI.
             </p>
           </div>
@@ -270,7 +264,7 @@ const Index = ({ startTour }: IndexProps) => {
               Featured <span className="text-gradient">Case Studies</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Real projects, real results. See how I've helped businesses solve their data challenges and achieve
+              Real projects, real results. See how we've helped businesses solve their data challenges and achieve
               measurable outcomes.
             </p>
           </div>
@@ -298,7 +292,7 @@ const Index = ({ startTour }: IndexProps) => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Why Clients Choose <span className="text-gradient">Me</span>
+                Why Clients Choose <span className="text-gradient">Us</span>
               </h2>
 
               <div className="space-y-4">
@@ -307,13 +301,13 @@ const Index = ({ startTour }: IndexProps) => {
                     icon: Zap,
                     title: "Results-Focused Approach",
                     description:
-                      "Every project starts with your business goals, not just technical requirements. I deliver solutions that drive real ROI.",
+                      "Every project starts with your business goals, not just technical requirements. We deliver solutions that drive real ROI.",
                   },
                   {
                     icon: CheckCircle2,
                     title: "Proven Track Record",
                     description:
-                      "With 97% accuracy on fraud detection models and dashboards saving 15+ hours weekly, I deliver measurable results.",
+                      "With 97% accuracy on fraud detection models and dashboards saving 15+ hours weekly, we deliver measurable results.",
                   },
                   {
                     icon: Users,
@@ -388,7 +382,7 @@ const Index = ({ startTour }: IndexProps) => {
 
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Ready to Transform Your Data?</h2>
               <p className="text-muted-foreground max-w-xl mx-auto mb-8">
-                Let's discuss how I can help you solve your data challenges and build intelligent solutions that drive
+                Let's discuss how we can help you solve your data challenges and build intelligent solutions that drive
                 real business results.
               </p>
 
@@ -406,7 +400,7 @@ const Index = ({ startTour }: IndexProps) => {
                 <Button asChild variant="outline" size="lg" className="text-lg px-8">
                   <Link to="/contact">
                     <MessageSquare className="mr-2 h-5 w-5" />
-                    Contact Me
+                    Contact Us
                   </Link>
                 </Button>
               </div>

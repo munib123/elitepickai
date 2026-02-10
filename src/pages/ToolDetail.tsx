@@ -40,9 +40,9 @@ const ToolDetail = () => {
     "name": tool.title,
     "description": tool.metaDescription,
     "provider": {
-      "@type": "Person",
-      "name": "Muneeb Shafiq",
-      "jobTitle": "Data Scientist & AI Engineer"
+      "@type": "Organization",
+      "name": "ElitePick AI",
+      "url": "https://elitepickai.com"
     },
     "areaServed": "Worldwide",
     "priceRange": tool.pricing[0]?.price || "$150 - $1200+",

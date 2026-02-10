@@ -29,7 +29,7 @@ const ServicesPage = () => {
               <span className="text-gradient">Data & AI Services</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
-              From interactive dashboards to intelligent automation—I deliver solutions that transform data into competitive advantages.
+              From interactive dashboards to intelligent automation—we deliver solutions that transform data into competitive advantages.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
@@ -120,7 +120,7 @@ const ServicesPage = () => {
             Not Sure Which Service You Need?
           </h2>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Contact me for a free consultation. I'll help you identify the best solution for your specific business challenge.
+            Contact us for a free consultation. We'll help you identify the best solution for your specific business challenge.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">

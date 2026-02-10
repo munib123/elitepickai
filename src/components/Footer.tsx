@@ -11,8 +11,8 @@ const Footer = () => {
     { name: 'Tools & Solutions', href: '/tools' },
     { name: 'Project Portfolio', href: '/projects' },
     { name: 'Blog & Tutorials', href: '/blog' },
-    { name: 'About Muneeb Shafiq', href: '/about' },
-    { name: 'Hire Me', href: '/contact' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Contact Us', href: '/contact' },
     { name: 'Direct Order', href: '/order' },
   ];
 
@@ -36,10 +36,10 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center gap-2">
-              <span className="text-2xl font-bold text-gradient">Muneeb Shafiq</span>
+              <span className="text-2xl font-bold text-gradient">ElitePick AI</span>
             </Link>
             <p className="text-muted-foreground text-sm">
-              Freelance Data Scientist & AI Engineer helping businesses transform raw data into actionable insights and intelligent automation.
+              AI & Data Science Agency helping businesses transform raw data into actionable insights and intelligent automation.
             </p>
             <div className="flex gap-4">
               {socials.map((social) => (
@@ -117,7 +117,7 @@ const Footer = () => {
               </Button>
               <Button asChild variant="outline" size="sm" className="w-full">
                 <Link to="/contact">
-                  Contact Me
+                  Contact Us
                 </Link>
               </Button>
             </div>
@@ -127,10 +127,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-muted-foreground text-sm">
-            © {currentYear} Muneeb Shafiq. All rights reserved.
+            © {currentYear} ElitePick AI. All rights reserved.
           </p>
           <p className="text-muted-foreground text-sm">
-            Data Scientist & AI Engineer | Available Worldwide
+            AI & Data Science Agency | Available Worldwide
           </p>
         </div>
       </div>

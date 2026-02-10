@@ -1,18 +1,18 @@
-# ElitePick Ai by Muneeb Shafiq - Complete Content
+# ElitePick AI - Complete Content
 
-> Freelance Data Scientist & AI Engineer specializing in Power BI dashboards,
+> AI & Data Science Agency specializing in Power BI dashboards,
 > n8n workflow automation, custom AI chatbots, and machine learning solutions.
 
 ---
 
-## About Muneeb Shafiq
+## About ElitePick AI
 
-**Role:** Freelance Data Scientist & AI Engineer
+**Role:** AI & Data Science Agency
 **Location:** Available Worldwide
 **Status:** Accepting New Clients
 **Fiverr Rating:** 4.8★ with 15+ successful projects
 
-I help businesses transform raw data into actionable insights and intelligent automation. Specializing in Power BI dashboards, machine learning models, and custom AI chatbots that drive real business results.
+We help businesses transform raw data into actionable insights and intelligent automation. Specializing in Power BI dashboards, machine learning models, and custom AI chatbots that drive real business results.
 
 ### Technical Skills
 
@@ -213,7 +213,7 @@ I help businesses transform raw data into actionable insights and intelligent au
 
 ## Services
 
-### 1. Freelance Power BI Dashboard Expert
+### 1. Power BI Dashboard Expert
 
 **URL:** https://elitepickai.com/services/power-bi-dashboard-expert
 **Headline:** Transform Your Raw Data Into Executive-Ready Visual Intelligence
@@ -240,7 +240,7 @@ I help businesses transform raw data into actionable insights and intelligent au
 
 ---
 
-### 2. Tableau Consultant for Hire
+### 2. Tableau Consulting Services
 
 **URL:** https://elitepickai.com/services/tableau-consultant
 **Headline:** Professional-Grade Data Stories That Impress Stakeholders and Drive Decisions
@@ -453,7 +453,7 @@ I help businesses transform raw data into actionable insights and intelligent au
 
 **URL:** https://elitepickai.com/tools/n8n-automation
 **Headline:** Automate Mission-Critical Workflows with Expert n8n Integrations
-**Subheadline:** Stop paying per task. Stop wrestling with API documentation. I build powerful, self-hosted n8n automations that connect your entire tech stack—running 24/7 without the "Zapier tax" or the technical headache.
+**Subheadline:** Stop paying per task. Stop wrestling with API documentation. We build powerful, self-hosted n8n automations that connect your entire tech stack—running 24/7 without the “Zapier tax” or the technical headache.
 **Fiverr:** https://www.fiverr.com/s/AyAErkq
 
 **Trust Metrics:**

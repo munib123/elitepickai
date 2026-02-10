@@ -9,17 +9,17 @@ export const tourSteps: Step[] = [
   },
   {
     target: '.tour-navigation',
-    content: 'Navigate to different pages: Services, Projects, About, and Contact to explore everything I offer.',
+    content: 'Navigate to different pages: Services, Projects, About, and Contact to explore everything we offer.',
     placement: 'bottom',
   },
   {
     target: '.tour-hero',
-    content: 'This is the hero section showcasing my key stats and expertise as a Data Scientist & AI Engineer.',
+    content: 'This is the hero section showcasing our key stats and expertise in Data Science & AI Engineering.',
     placement: 'bottom',
   },
   {
     target: '.tour-services',
-    content: 'Explore my Data Analytics and AI/ML services. Each service has detailed information and pricing.',
+    content: 'Explore our Data Analytics and AI/ML services. Each service has detailed information and pricing.',
     placement: 'top',
   },
   {
@@ -29,7 +29,7 @@ export const tourSteps: Step[] = [
   },
   {
     target: '.tour-fiverr-btn',
-    content: 'Click here to hire me directly on Fiverr with secure payment and milestone protection.',
+    content: 'Click here to order directly on Fiverr with secure payment and milestone protection.',
     placement: 'bottom',
   },
   {

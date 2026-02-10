@@ -25,7 +25,7 @@ const Tools = () => {
               Specialized <span className="text-gradient">Tools & Solutions</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              Deep-dive landing pages for my most in-demand services. Each tool page provides comprehensive details, use cases, pricing, and resources to help you make informed decisions.
+              Deep-dive landing pages for our most in-demand services. Each tool page provides comprehensive details, use cases, pricing, and resources to help you make informed decisions.
             </p>
             <Button asChild variant="outline" size="lg">
               <Link to="/services">
@@ -56,12 +56,12 @@ const Tools = () => {
               Don't See What You Need?
             </h2>
             <p className="text-muted-foreground mb-6">
-              I offer custom solutions for unique business challenges. Let's discuss your specific requirements.
+              We offer custom solutions for unique business challenges. Let's discuss your specific requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild>
                 <Link to="/contact">
-                  Contact Me
+                  Contact Us
                 </Link>
               </Button>
               <Button asChild variant="outline">

@@ -33,10 +33,9 @@ const ProjectDetailPage = () => {
       "name": project.title,
       "description": `${project.result.split(".")[0]}. ${project.situation.split(".")[0]}.`,
       "author": {
-        "@type": "Person",
-        "name": "Muneeb Shafiq",
-        "url": `${BASE_URL}/about`,
-        "jobTitle": "Data Scientist & AI Engineer"
+        "@type": "Organization",
+        "name": "ElitePick AI",
+        "url": `${BASE_URL}/about`
       },
       "url": `${BASE_URL}/projects/${project.slug}`,
       "keywords": project.tags.join(", "),
@@ -54,8 +53,8 @@ const ProjectDetailPage = () => {
         "codeRepository": project.githubLink
       }),
       "provider": {
-        "@type": "Person",
-        "name": "Muneeb Shafiq",
+        "@type": "Organization",
+        "name": "ElitePick AI",
         "url": "https://www.fiverr.com/elitepick_ai"
       },
       "potentialAction": {
@@ -218,7 +217,7 @@ const ProjectDetailPage = () => {
           <div className="max-w-4xl mx-auto bg-card border border-border rounded-xl p-8 text-center shadow-sm">
             <h2 className="text-2xl font-bold text-foreground mb-4">Need a Similar Solution?</h2>
             <p className="text-muted-foreground mb-6">
-              I can build custom solutions tailored to your specific business challenges.
+              We can build custom solutions tailored to your specific business challenges.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
