@@ -1,7 +1,7 @@
 import { ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import powerBiLogo from '@/assets/tools/powerbi-logo.svg';
-import n8nLogo from '@/assets/tools/n8n-logo.png';
+import n8nLogo from '@/assets/tools/n8n-logo.webp';
 
 interface HeroSectionProps {
   headline: string;

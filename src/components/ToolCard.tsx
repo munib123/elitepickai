@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Tool } from '@/data/tools';
 import powerBiLogo from '@/assets/tools/powerbi-logo.svg';
-import n8nLogo from '@/assets/tools/n8n-logo.png';
+import n8nLogo from '@/assets/tools/n8n-logo.webp';
 
 interface ToolCardProps {
   tool: Tool;

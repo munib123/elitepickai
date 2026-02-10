@@ -1,13 +1,13 @@
 // Use string paths for assets - they'll be resolved by Vite at runtime
 // TypeScript can't verify these at compile time, but Vite handles them correctly
-const powerbiHeroDashboard = new URL('../assets/tools/powerbi-hero-dashboard.png', import.meta.url).href;
-const powerbiPainMatrix = new URL('../assets/tools/powerbi-pain-matrix.png', import.meta.url).href;
-const powerbi5StepProcess = new URL('../assets/tools/powerbi-5-step-process.png', import.meta.url).href;
-const powerbiFinancialDashboard = new URL('../assets/tools/powerbi-financial-dashboard.png', import.meta.url).href;
-const powerbiSalesDashboard = new URL('../assets/tools/powerbi-sales-dashboard.png', import.meta.url).href;
-const powerbiInventoryDashboard = new URL('../assets/tools/powerbi-inventory-dashboard.png', import.meta.url).href;
-const powerbiLeadMagnets = new URL('../assets/tools/powerbi-lead-magnets.png', import.meta.url).href;
-const powerbiCtaBanner = new URL('../assets/tools/powerbi-cta-banner.png', import.meta.url).href;
+const powerbiHeroDashboard = new URL('../assets/tools/powerbi-hero-dashboard.webp', import.meta.url).href;
+const powerbiPainMatrix = new URL('../assets/tools/powerbi-pain-matrix.webp', import.meta.url).href;
+const powerbi5StepProcess = new URL('../assets/tools/powerbi-5-step-process.webp', import.meta.url).href;
+const powerbiFinancialDashboard = new URL('../assets/tools/powerbi-financial-dashboard.webp', import.meta.url).href;
+const powerbiSalesDashboard = new URL('../assets/tools/powerbi-sales-dashboard.webp', import.meta.url).href;
+const powerbiInventoryDashboard = new URL('../assets/tools/powerbi-inventory-dashboard.webp', import.meta.url).href;
+const powerbiLeadMagnets = new URL('../assets/tools/powerbi-lead-magnets.webp', import.meta.url).href;
+const powerbiCtaBanner = new URL('../assets/tools/powerbi-cta-banner.webp', import.meta.url).href;
 
 import { n8nTool } from './tools/n8n';
 

@@ -1,13 +1,13 @@
 // Use string paths for assets - they'll be resolved by Vite at runtime
-const n8nHeroWorkflow = new URL('../../assets/tools/n8n-hero-workflow.png', import.meta.url).href;
-const n8nPainMatrix = new URL('../../assets/tools/n8n-pain-matrix.png', import.meta.url).href;
-const n8nMethodology = new URL('../../assets/tools/n8n-methodology.png', import.meta.url).href;
-const n8nUseCaseMarketing = new URL('../../assets/tools/n8n-usecase-marketing.png', import.meta.url).href;
-const n8nUseCaseOperations = new URL('../../assets/tools/n8n-usecase-operations.png', import.meta.url).href;
-const n8nUseCaseAI = new URL('../../assets/tools/n8n-usecase-ai.png', import.meta.url).href;
-const n8nLogo = new URL('../../assets/tools/n8n-logo.png', import.meta.url).href;
-const n8nLeadMagnets = new URL('../../assets/tools/n8n-lead-magnets.png', import.meta.url).href;
-const n8nCtaBanner = new URL('../../assets/tools/n8n-cta-banner.png', import.meta.url).href;
+const n8nHeroWorkflow = new URL('../../assets/tools/n8n-hero-workflow.webp', import.meta.url).href;
+const n8nPainMatrix = new URL('../../assets/tools/n8n-pain-matrix.webp', import.meta.url).href;
+const n8nMethodology = new URL('../../assets/tools/n8n-methodology.webp', import.meta.url).href;
+const n8nUseCaseMarketing = new URL('../../assets/tools/n8n-usecase-marketing.webp', import.meta.url).href;
+const n8nUseCaseOperations = new URL('../../assets/tools/n8n-usecase-operations.webp', import.meta.url).href;
+const n8nUseCaseAI = new URL('../../assets/tools/n8n-usecase-ai.webp', import.meta.url).href;
+const n8nLogo = new URL('../../assets/tools/n8n-logo.webp', import.meta.url).href;
+const n8nLeadMagnets = new URL('../../assets/tools/n8n-lead-magnets.webp', import.meta.url).href;
+const n8nCtaBanner = new URL('../../assets/tools/n8n-cta-banner.webp', import.meta.url).href;
 
 import type { Tool } from '../tools';
 
