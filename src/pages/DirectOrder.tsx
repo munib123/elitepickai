@@ -179,6 +179,21 @@ ${formData.additionalInfo || 'None'}
         canonical="https://elitepickai.com/order"
         ogType="website"
         keywords="Direct Order, Hire Data Scientist, Custom AI Project, Machine Learning Services"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Direct Order — ElitePick AI",
+          "description": "Place a direct order for data science, AI, and machine learning services from ElitePick AI.",
+          "url": "https://elitepickai.com/order",
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://elitepickai.com/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://elitepickai.com/services" },
+              { "@type": "ListItem", "position": 3, "name": "Direct Order", "item": "https://elitepickai.com/order" }
+            ]
+          }
+        }}
       />
 
       {/* Back Link */}

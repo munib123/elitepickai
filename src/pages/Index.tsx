@@ -116,6 +116,8 @@ const Index = ({ startTour }: IndexProps) => {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{ backgroundImage: `url(${heroBg})` }}
+          role="img"
+          aria-label="AI and data science abstract background"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
 

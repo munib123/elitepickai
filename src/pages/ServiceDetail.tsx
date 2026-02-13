@@ -44,6 +44,33 @@ const ServiceDetailPage = () => {
   const serviceTestimonials = getTestimonialsByService(service.slug);
   const displayTestimonials = serviceTestimonials.length > 0 ? serviceTestimonials : getFeaturedTestimonials(2);
 
+  // BreadcrumbList + Service JSON-LD structured data
+  const serviceStructuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://elitepickai.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://elitepickai.com/services" },
+          { "@type": "ListItem", "position": 3, "name": service.title.replace("Freelance ", "").replace(" for Hire", ""), "item": `https://elitepickai.com/services/${service.slug}` }
+        ]
+      },
+      {
+        "@type": "Service",
+        "name": service.title,
+        "description": service.headline,
+        "provider": {
+          "@type": "Organization",
+          "name": "ElitePick AI",
+          "url": "https://elitepickai.com"
+        },
+        "areaServed": "Worldwide",
+        "url": `https://elitepickai.com/services/${service.slug}`
+      }
+    ]
+  };
+
   return (
     <Layout>
       <SEOHelmet
@@ -52,6 +79,7 @@ const ServiceDetailPage = () => {
         canonical={`https://elitepickai.com/services/${service.slug}`}
         ogType="website"
         keywords={service.seoKeywords}
+        structuredData={serviceStructuredData}
       />
 
       <div className="bg-muted/50 border-b border-border py-4">

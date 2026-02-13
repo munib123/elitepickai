@@ -6,6 +6,22 @@ import ToolCard from '@/components/ToolCard';
 import { Button } from '@/components/ui/button';
 import { tools } from '@/data/tools';
 
+const toolsJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "AI & Data Tools by ElitePick AI",
+  "description": "Specialized tools and services for data visualization, business intelligence, and analytics.",
+  "url": "https://elitepickai.com/tools",
+  "numberOfItems": tools.length,
+  "itemListElement": tools.map((tool, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": tool.title,
+    "description": tool.metaDescription,
+    "url": `https://elitepickai.com/tools/${tool.slug}`
+  }))
+};
+
 const Tools = () => {
   return (
     <Layout>
@@ -15,6 +31,7 @@ const Tools = () => {
         canonical="https://elitepickai.com/tools"
         ogType="website"
         keywords="Power BI Tools, Data Visualization Services, Business Intelligence Tools, Dashboard Development, Analytics Solutions"
+        structuredData={toolsJsonLd}
       />
 
       {/* Hero Section */}

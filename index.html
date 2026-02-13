@@ -12,6 +12,10 @@
     
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-DNS-Prefetch-Control" content="on" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://api.web3forms.com" crossorigin />
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -37,10 +41,14 @@
     <meta property="og:description" content="Top-rated AI & data science agency. Power BI Dashboards, AI Chatbots, ML Models & Python Automation." />
     <meta property="og:url" content="https://elitepickai.com/" />
     <meta property="og:image" content="https://elitepickai.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card (fallback) -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@elitepickai" />
+    <meta name="twitter:creator" content="@elitepickai" />
     <meta name="twitter:title" content="ElitePick AI | AI & Data Science Agency" />
     <meta name="twitter:description" content="Top-rated AI & data science agency. Power BI Dashboards, AI Chatbots, ML Models & Python Automation." />
     <meta name="twitter:image" content="https://elitepickai.com/og-image.png" />
@@ -48,6 +56,13 @@
 
   <body>
     <div id="root"></div>
+    <noscript>
+      <div style="padding:2rem;text-align:center;font-family:system-ui,sans-serif">
+        <h1>ElitePick AI — AI &amp; Data Science Agency</h1>
+        <p>Power BI Dashboards, AI Chatbots, ML Models &amp; Python Automation.</p>
+        <p>Please enable JavaScript to use this site, or visit our <a href="https://www.fiverr.com/elitepick_ai">Fiverr profile</a>.</p>
+      </div>
+    </noscript>
     <script prerender type="module" src="/src/main.tsx"></script>
   </body>
 </html>

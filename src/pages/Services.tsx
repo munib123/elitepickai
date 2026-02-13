@@ -6,6 +6,23 @@ import ServiceCard from '@/components/ServiceCard';
 import { Button } from '@/components/ui/button';
 import { services, getServicesByCluster } from '@/data/services';
 import TestimonialsSection from '@/components/TestimonialsSection';
+
+const servicesJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "AI & Data Science Services by ElitePick AI",
+  "description": "Professional AI engineering services including custom chatbots, n8n workflow automation, Power BI dashboards, ML models, and LLM integration.",
+  "url": "https://elitepickai.com/services",
+  "numberOfItems": services.length,
+  "itemListElement": services.map((service, index) => ({
+    "@type": "ListItem",
+    "position": index + 1,
+    "name": service.title,
+    "description": service.headline,
+    "url": `https://elitepickai.com/services/${service.slug}`
+  }))
+};
+
 const ServicesPage = () => {
   const dataAnalyticsServices = getServicesByCluster('data-analytics');
   const aiMlServices = getServicesByCluster('ai-ml');
@@ -18,6 +35,7 @@ const ServicesPage = () => {
         canonical="https://elitepickai.com/services"
         ogType="website"
         keywords="AI Chatbot Development, Power BI Dashboard, n8n Automation, Machine Learning Services, LLM Integration, Python Automation Services"
+        structuredData={servicesJsonLd}
       />
 
       {/* Hero */}

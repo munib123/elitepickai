@@ -1,5 +1,6 @@
 import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Helmet } from 'react-helmet-async';
 import Layout from "@/components/Layout";
 import SEOHelmet from "@/components/SEOHelmet";
 
@@ -17,6 +18,11 @@ const NotFound = () => {
         description="The page you're looking for doesn't exist. Browse our AI & Data Science services, projects, and blog."
         canonical="https://elitepickai.com/"
       />
+      {/* Override robots to noindex 404 pages */}
+      <Helmet>
+        <meta name="robots" content="noindex, follow" />
+        <meta name="googlebot" content="noindex, follow" />
+      </Helmet>
       <div className="flex min-h-[70vh] items-center justify-center">
         <div className="text-center">
           <h1 className="mb-4 text-4xl font-bold">404 — Page Not Found</h1>

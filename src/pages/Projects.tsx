@@ -3,6 +3,25 @@ import SEOHelmet from '@/components/SEOHelmet';
 import ProjectCard from '@/components/ProjectCard';
 import { projects, getFeaturedProjects } from '@/data/projects';
 
+const projectsJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "AI & Data Science Portfolio | ElitePick AI",
+  "description": "Real-world AI and data science projects: KYC analytics dashboards, AI travel assistants, crime analysis, and facility operations pipelines.",
+  "url": "https://elitepickai.com/projects",
+  "mainEntity": {
+    "@type": "ItemList",
+    "numberOfItems": projects.length,
+    "itemListElement": projects.map((project, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": project.title,
+      "description": project.result.split('.')[0] + '.',
+      "url": `https://elitepickai.com/projects/${project.slug}`
+    }))
+  }
+};
+
 const ProjectsPage = () => {
   const featuredProjects = getFeaturedProjects();
   const otherProjects = projects.filter(p => !p.featured);
@@ -15,6 +34,7 @@ const ProjectsPage = () => {
         canonical="https://elitepickai.com/projects"
         ogType="website"
         keywords="AI Portfolio, Data Science Projects, Power BI Dashboard Projects, AI Chatbot Projects, Machine Learning Portfolio"
+        structuredData={projectsJsonLd}
       />
 
       {/* Hero */}

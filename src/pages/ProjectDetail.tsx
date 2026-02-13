@@ -29,43 +29,55 @@ const ProjectDetailPage = () => {
     
     return {
       "@context": "https://schema.org",
-      "@type": "CreativeWork",
-      "name": project.title,
-      "description": `${project.result.split(".")[0]}. ${project.situation.split(".")[0]}.`,
-      "author": {
-        "@type": "Organization",
-        "name": "ElitePick AI",
-        "url": `${BASE_URL}/about`
-      },
-      "url": `${BASE_URL}/projects/${project.slug}`,
-      "keywords": project.tags.join(", "),
-      "genre": project.category,
-      "about": {
-        "@type": "Thing",
-        "name": project.category
-      },
-      "text": `SITUATION: ${project.situation} TASK: ${project.task} ACTION: ${project.action} RESULT: ${project.result}`,
-      "tool": project.tools.map(tool => ({
-        "@type": "HowToTool",
-        "name": tool
-      })),
-      ...(project.githubLink && {
-        "codeRepository": project.githubLink
-      }),
-      "provider": {
-        "@type": "Organization",
-        "name": "ElitePick AI",
-        "url": "https://www.fiverr.com/elitepick_ai"
-      },
-      "potentialAction": {
-        "@type": "OrderAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": project.fiverrLink,
-          "actionPlatform": "https://fiverr.com"
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": `${BASE_URL}/` },
+            { "@type": "ListItem", "position": 2, "name": "Projects", "item": `${BASE_URL}/projects` },
+            { "@type": "ListItem", "position": 3, "name": project.shortTitle, "item": `${BASE_URL}/projects/${project.slug}` }
+          ]
         },
-        "name": "Order Similar Project"
-      }
+        {
+          "@type": "CreativeWork",
+          "name": project.title,
+          "description": `${project.result.split(".")[0]}. ${project.situation.split(".")[0]}.`,
+          "author": {
+            "@type": "Organization",
+            "name": "ElitePick AI",
+            "url": `${BASE_URL}/about`
+          },
+          "url": `${BASE_URL}/projects/${project.slug}`,
+          "keywords": project.tags.join(", "),
+          "genre": project.category,
+          "about": {
+            "@type": "Thing",
+            "name": project.category
+          },
+          "text": `SITUATION: ${project.situation} TASK: ${project.task} ACTION: ${project.action} RESULT: ${project.result}`,
+          "tool": project.tools.map(tool => ({
+            "@type": "HowToTool",
+            "name": tool
+          })),
+          ...(project.githubLink && {
+            "codeRepository": project.githubLink
+          }),
+          "provider": {
+            "@type": "Organization",
+            "name": "ElitePick AI",
+            "url": "https://www.fiverr.com/elitepick_ai"
+          },
+          "potentialAction": {
+            "@type": "OrderAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": project.fiverrLink,
+              "actionPlatform": "https://fiverr.com"
+            },
+            "name": "Order Similar Project"
+          }
+        }
+      ]
     };
   };
 

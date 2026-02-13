@@ -93,7 +93,27 @@ const ContactPage = () => {
           title="Contact Us | AI & Data Science Agency — ElitePick AI"
           description="Ready to build AI chatbots, Power BI dashboards, or ML models? Contact ElitePick AI for a free consultation. Available for projects worldwide."
         ogType="website"
+        canonical="https://elitepickai.com/contact"
         keywords="Contact AI Agency, AI Consultation, Data Science Agency, ElitePick AI"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact ElitePick AI",
+          "description": "Get in touch with ElitePick AI for AI chatbots, Power BI dashboards, and ML models.",
+          "url": "https://elitepickai.com/contact",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "ElitePick AI",
+            "email": "muneebzehel@gmail.com",
+            "url": "https://elitepickai.com",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer service",
+              "availableLanguage": "English",
+              "email": "muneebzehel@gmail.com"
+            }
+          }
+        }}
       />
 
       {/* Hero */}
