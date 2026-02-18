@@ -38,8 +38,8 @@ const Blog = () => {
             Blog
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            In-depth guides, tutorials, and insights on Power BI, data analytics, 
-            and business intelligence — by a certified BI engineer.
+            In-depth guides, tutorials, and insights on Power BI, n8n automation, data analytics, 
+            and AI workflow engineering — by a certified BI & automation engineer.
           </p>
         </div>
       </section>
