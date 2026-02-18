@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Layout from '@/components/Layout';
 import SEOHelmet from '@/components/SEOHelmet';
 import ProjectCard from '@/components/ProjectCard';
@@ -87,14 +88,26 @@ const ProjectsPage = () => {
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
             We can build custom dashboards, data pipelines, AI systems, and analytics solutions for your business.
           </p>
-          <a
-            href="https://www.fiverr.com/s/bdXwDDa"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors rounded-lg"
-          >
-            Get Started on Fiverr
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/order"
+              className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors rounded-lg"
+            >
+              Place Direct Order
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium border border-border text-foreground hover:bg-secondary transition-colors rounded-lg"
+            >
+              Get Free Consultation
+            </Link>
+            <Link
+              to="/services"
+              className="inline-flex items-center justify-center px-8 py-3 text-lg font-medium border border-border text-foreground hover:bg-secondary transition-colors rounded-lg"
+            >
+              View Services
+            </Link>
+          </div>
         </div>
       </section>
     </Layout>

@@ -40,7 +40,7 @@
     <meta property="og:title" content="ElitePick AI | AI & Data Science Agency" />
     <meta property="og:description" content="Top-rated AI & data science agency. Power BI Dashboards, AI Chatbots, ML Models & Python Automation." />
     <meta property="og:url" content="https://elitepickai.com/" />
-    <meta property="og:image" content="https://elitepickai.com/og-image.png" />
+    <meta property="og:image" content="https://elitepickai.com/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_US" />
@@ -51,7 +51,112 @@
     <meta name="twitter:creator" content="@elitepickai" />
     <meta name="twitter:title" content="ElitePick AI | AI & Data Science Agency" />
     <meta name="twitter:description" content="Top-rated AI & data science agency. Power BI Dashboards, AI Chatbots, ML Models & Python Automation." />
-    <meta name="twitter:image" content="https://elitepickai.com/og-image.png" />
+    <meta name="twitter:image" content="https://elitepickai.com/og-image.jpg" />
+
+    <!-- Static JSON-LD for non-JS crawlers (homepage) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://elitepickai.com/#website",
+          "url": "https://elitepickai.com/",
+          "name": "ElitePick AI",
+          "description": "AI & Data Science Agency — Dashboards, Chatbots & Automation",
+          "publisher": { "@id": "https://elitepickai.com/#organization" },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://elitepickai.com/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://elitepickai.com/#organization",
+          "name": "ElitePick AI",
+          "description": "AI & Data Science Agency specializing in Power BI dashboards, AI chatbots, machine learning, and Python automation.",
+          "url": "https://elitepickai.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://elitepickai.com/favicon-96x96.png",
+            "width": 96,
+            "height": 96
+          },
+          "image": "https://elitepickai.com/og-image.jpg",
+          "email": "muneebzehel@gmail.com",
+          "founder": {
+            "@type": "Person",
+            "name": "Muneeb Shafiq",
+            "jobTitle": "Founder & Lead AI Engineer",
+            "url": "https://elitepickai.com/about"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/muneeb-zehel",
+            "https://github.com/munib123",
+            "https://www.fiverr.com/elitepick_ai"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://elitepickai.com/#service",
+          "name": "ElitePick AI — AI & Data Science Services",
+          "description": "Professional AI engineering services: custom chatbots, n8n workflow automation, Power BI dashboards, ML models, and LLM integration.",
+          "provider": { "@id": "https://elitepickai.com/#organization" },
+          "areaServed": "Worldwide",
+          "url": "https://elitepickai.com/services",
+          "serviceType": [
+            "AI Chatbot Development",
+            "Power BI Dashboard Development",
+            "Machine Learning Engineering",
+            "Data Cleaning & Analysis",
+            "Python Automation",
+            "RAG System Development",
+            "LLM Fine-tuning",
+            "n8n Workflow Automation"
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "AI & Data Science Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Power BI Dashboard Development",
+                  "url": "https://elitepickai.com/services/power-bi-dashboard-expert"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Custom AI Chatbot Development",
+                  "url": "https://elitepickai.com/services/custom-ai-chatbot-developer"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Machine Learning Engineering",
+                  "url": "https://elitepickai.com/services/machine-learning-engineer"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "n8n Workflow Automation",
+                  "url": "https://elitepickai.com/tools/n8n-automation"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
   </head>
 
   <body>
@@ -60,7 +165,14 @@
       <div style="padding:2rem;text-align:center;font-family:system-ui,sans-serif">
         <h1>ElitePick AI — AI &amp; Data Science Agency</h1>
         <p>Power BI Dashboards, AI Chatbots, ML Models &amp; Python Automation.</p>
-        <p>Please enable JavaScript to use this site, or visit our <a href="https://www.fiverr.com/elitepick_ai">Fiverr profile</a>.</p>
+        <nav style="margin-top:1rem">
+          <a href="/services" style="margin:0 1rem">Services</a>
+          <a href="/projects" style="margin:0 1rem">Projects</a>
+          <a href="/blog" style="margin:0 1rem">Blog</a>
+          <a href="/about" style="margin:0 1rem">About</a>
+          <a href="/contact" style="margin:0 1rem">Contact</a>
+        </nav>
+        <p style="margin-top:1rem">Please enable JavaScript to use this site, or visit our <a href="https://www.fiverr.com/elitepick_ai">Fiverr profile</a>.</p>
       </div>
     </noscript>
     <script prerender type="module" src="/src/main.tsx"></script>
