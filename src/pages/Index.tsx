@@ -133,8 +133,8 @@ const Index = ({ startTour }: IndexProps) => {
 
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-slide-up">
-              <span className="text-foreground">Your </span>
-              <span className="text-gradient">Data Science</span>
+              <span className="text-foreground">Expert </span>
+              <span className="text-gradient">n8n Automation</span>
               <span className="text-foreground"> & </span>
               <span className="text-gradient">AI Agency</span>
             </h1>
@@ -144,9 +144,8 @@ const Index = ({ startTour }: IndexProps) => {
               className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto animate-slide-up"
               style={{ animationDelay: "0.1s" }}
             >
-              Transform your raw data into <span className="text-foreground font-medium">actionable insights</span> and{" "}
-              <span className="text-foreground font-medium">intelligent automation</span>. Power BI Dashboards • AI
-              Chatbots • ML Models.
+              Automate your business with <span className="text-foreground font-medium">n8n workflows</span>, visualize data with{" "}
+              <span className="text-foreground font-medium">Power BI dashboards</span>, and deploy custom AI chatbots — all in one agency.
             </p>
 
             {/* CTAs */}
