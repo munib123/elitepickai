@@ -77,7 +77,6 @@ export const projects: Project[] = [
     result: 'Delivered a dashboard enabling stakeholders to identify high-risk zones within seconds rather than hours. The visualization revealed that 35% of certain crime types were concentrated in specific time windows, enabling targeted patrol scheduling recommendations.',
     tools: ['Power BI', 'Pandas', 'NumPy', 'MSSQL'],
     fiverrLink: 'https://www.fiverr.com/s/vvj4gpZ',
-    githubLink: 'https://github.com/munib123/Budget-Management-System',
     featured: false
   },
   {
