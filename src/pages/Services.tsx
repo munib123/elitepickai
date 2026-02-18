@@ -30,11 +30,11 @@ const ServicesPage = () => {
   return (
     <Layout>
       <SEOHelmet
-        title="AI & Data Science Services | Chatbots, Automation, Dashboards | ElitePick AI"
-        description="Professional AI engineering services: custom chatbots, n8n workflow automation, Power BI dashboards, ML models, and LLM integration. Get a free consultation."
+        title="n8n Automation, Power BI & AI Chatbot Services | ElitePick AI"
+        description="Expert n8n workflow automation, custom AI chatbots, Power BI dashboards, and ML models. ElitePick AI automates your business processes end-to-end. Free consultation."
         canonical="https://elitepickai.com/services"
         ogType="website"
-        keywords="AI Chatbot Development, Power BI Dashboard, n8n Automation, Machine Learning Services, LLM Integration, Python Automation Services"
+        keywords="n8n Automation Services, n8n Workflow Developer, AI Chatbot Development, Power BI Dashboard Expert, Machine Learning Services, Business Process Automation, Zapier Alternative"
         structuredData={servicesJsonLd}
       />
 

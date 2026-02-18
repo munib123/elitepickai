@@ -90,11 +90,11 @@ const ContactPage = () => {
   return (
     <Layout>
       <SEOHelmet
-          title="Contact Us | AI & Data Science Agency — ElitePick AI"
-          description="Ready to build AI chatbots, Power BI dashboards, or ML models? Contact ElitePick AI for a free consultation. Available for projects worldwide."
+        title="Contact ElitePick AI | n8n Automation & AI Consultation"
+        description="Reach out to discuss n8n workflow automation, Power BI dashboards, or AI chatbot projects. Free consultation available. We respond within 24 hours."
         ogType="website"
         canonical="https://elitepickai.com/contact"
-        keywords="Contact AI Agency, AI Consultation, Data Science Agency, ElitePick AI"
+        keywords="Contact n8n Expert, Hire Automation Specialist, AI Consultation, Data Science Agency, ElitePick AI, n8n Freelancer"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "ContactPage",

@@ -26,11 +26,11 @@ const Tools = () => {
   return (
     <Layout>
       <SEOHelmet
-        title="AI & Data Tools | Power BI Dashboard Development Services | ElitePick AI"
-        description="Explore specialized tools and services for data visualization, business intelligence, and analytics. Custom Power BI dashboards, Tableau solutions, and more."
+        title="n8n Automation & Power BI Dashboard Services | ElitePick AI"
+        description="Expert n8n workflow automation and Power BI dashboard development services. Build self-hosted automations, eliminate manual tasks, and create real-time business intelligence."
         canonical="https://elitepickai.com/tools"
         ogType="website"
-        keywords="Power BI Tools, Data Visualization Services, Business Intelligence Tools, Dashboard Development, Analytics Solutions"
+        keywords="n8n Automation Services, n8n Developer, Power BI Dashboard Services, Business Intelligence Tools, Workflow Automation, Zapier Alternative, n8n Expert"
         structuredData={toolsJsonLd}
       />
 

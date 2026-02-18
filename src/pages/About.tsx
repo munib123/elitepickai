@@ -80,6 +80,7 @@ const personJsonLd = {
     "https://www.fiverr.com/elitepick_ai"
   ],
   "knowsAbout": [
+    "n8n", "n8n Workflow Automation", "Workflow Automation", "Business Process Automation",
     "Python", "SQL", "Pandas", "NumPy", "Scikit-learn",
     "Power BI", "Tableau", "Matplotlib", "Seaborn", "Plotly",
     "TensorFlow", "LangChain", "RAG", "LLM Fine-tuning", "Prompt Engineering",
@@ -152,11 +153,11 @@ const AboutPage = () => {
   return (
     <Layout>
       <SEOHelmet
-        title="About Us | Meet the Team Behind ElitePick AI"
-        description="Learn about ElitePick AI — a certified AI & data science agency with expertise in Power BI, TensorFlow, LangChain, and Python. IBM, Google & Microsoft certified."
+        title="About ElitePick AI | n8n Automation & AI Data Science Agency"
+        description="ElitePick AI is a certified AI & data science agency specializing in n8n workflow automation, Power BI dashboards, and custom AI chatbots. IBM, Google & Microsoft certified."
         canonical="https://elitepickai.com/about"
         ogType="profile"
-        keywords="ElitePick AI, AI Agency, Data Science Agency, Punjab University, IBM Certified, Google Certified"
+        keywords="ElitePick AI, n8n Automation Expert, Workflow Automation Specialist, AI Agency, Data Science Agency, IBM Certified, Google Certified, Microsoft Certified"
         structuredData={personJsonLd}
       />
 

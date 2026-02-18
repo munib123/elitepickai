@@ -10,20 +10,21 @@ const Blog = () => {
   return (
     <Layout>
       <SEOHelmet
-        title="AI & Data Science Blog | Tutorials & Insights | ElitePick AI"
-        description="Read the latest articles on AI engineering, data science, Power BI tutorials, automation workflows, and machine learning best practices by ElitePick AI."
+        title="n8n Automation & Power BI Blog | Tutorials by ElitePick AI"
+        description="Step-by-step tutorials on n8n workflow automation, Power BI dashboards, and AI engineering. Learn to automate lead generation, build dashboards, and deploy AI systems."
         canonical="https://elitepickai.com/blog"
         ogType="website"
-        keywords="AI Blog, Data Science Blog, Power BI Tutorial, Machine Learning Articles, Python Automation Guide"
+        keywords="n8n automation tutorial, n8n workflow guide, Power BI tutorial, AI automation blog, data science tutorials, n8n lead generation, business automation"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "Blog",
-          "name": "ElitePick AI Blog",
-          "description": "AI engineering, data science tutorials, and automation insights by ElitePick AI",
+          "name": "ElitePick AI Blog — n8n Automation & Power BI Tutorials",
+          "description": "Step-by-step tutorials on n8n workflow automation, Power BI dashboards, and AI engineering by ElitePick AI",
           "url": "https://elitepickai.com/blog",
           "author": {
             "@type": "Person",
-            "name": "Muneeb Shafiq"
+            "name": "Muneeb Shafiq",
+            "knowsAbout": ["n8n", "n8n Workflow Automation", "Power BI", "AI Engineering", "Data Science"]
           }
         }}
       />

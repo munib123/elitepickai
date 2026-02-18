@@ -55,11 +55,11 @@ const Index = ({ startTour }: IndexProps) => {
   return (
     <Layout onStartTour={startTour}>
       <SEOHelmet
-        title="ElitePick AI | AI & Data Science Agency — Dashboards, Chatbots & Automation"
-        description="ElitePick AI is a top-rated AI & data science agency. We build Power BI Dashboards, AI Chatbots, ML Models, RAG Systems & Python Automation. Transform your data into actionable insights."
+        title="n8n Automation Expert & AI Agency | Power BI Dashboards & Chatbots | ElitePick AI"
+        description="ElitePick AI builds n8n workflow automation, Power BI dashboards, and custom AI chatbots. Automate repetitive tasks, visualize your data, and deploy AI — rated 4.8★ on Fiverr."
         canonical="https://elitepickai.com/"
         ogType="website"
-        keywords="AI Agency, Data Science Agency, AI Consulting Firm, Power BI, AI Chatbot, Machine Learning, Python Automation, LangChain, RAG, ElitePick AI"
+        keywords="n8n Automation Expert, n8n Workflow Developer, n8n Freelancer, Workflow Automation Services, AI Agency, Data Science Agency, AI Consulting Firm, Power BI, AI Chatbot, Machine Learning, Python Automation, LangChain, RAG, ElitePick AI"
         structuredData={{
           "@context": "https://schema.org",
           "@graph": [
@@ -68,14 +68,14 @@ const Index = ({ startTour }: IndexProps) => {
               "@id": "https://elitepickai.com/#website",
               "url": "https://elitepickai.com/",
               "name": "ElitePick AI",
-              "description": "AI & Data Science Agency — Dashboards, Chatbots & Automation",
+              "description": "n8n Automation Expert & AI Agency — Dashboards, Chatbots & Workflow Automation",
               "publisher": { "@id": "https://elitepickai.com/#organization" }
             },
             {
               "@type": "Organization",
               "@id": "https://elitepickai.com/#organization",
               "name": "ElitePick AI",
-              "description": "AI & Data Science Agency",
+              "description": "n8n Workflow Automation Expert & AI Data Science Agency",
               "url": "https://elitepickai.com/",
               "sameAs": [
                 "https://www.linkedin.com/in/muneeb-zehel",
@@ -83,6 +83,7 @@ const Index = ({ startTour }: IndexProps) => {
                 "https://www.fiverr.com/elitepick_ai"
               ],
               "knowsAbout": [
+                "n8n Workflow Automation", "n8n", "Business Process Automation",
                 "Artificial Intelligence", "Machine Learning", "Data Science",
                 "Power BI", "Python", "LangChain", "RAG Systems",
                 "Natural Language Processing", "AI Chatbots", "Data Visualization"
@@ -91,10 +92,11 @@ const Index = ({ startTour }: IndexProps) => {
             {
               "@type": "ProfessionalService",
               "@id": "https://elitepickai.com/#service",
-              "name": "ElitePick AI — AI & Data Science Services",
+              "name": "ElitePick AI — n8n Automation & AI Data Science Services",
               "provider": { "@id": "https://elitepickai.com/#organization" },
               "areaServed": "Worldwide",
               "serviceType": [
+                "n8n Workflow Automation",
                 "AI Chatbot Development",
                 "Power BI Dashboard Development",
                 "Machine Learning Engineering",

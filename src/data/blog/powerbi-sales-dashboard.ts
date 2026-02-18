@@ -27,7 +27,7 @@ export const powerbiSalesDashboardPost: BlogPost = {
   canonicalUrl: 'https://elitepickai.com/blog/power-bi/build-sales-dashboard-tutorial',
   ogTitle: 'How to Build a Sales Dashboard in Power BI from Scratch (Step-by-Step)',
   ogDescription: 'Follow along as we build a complete sales dashboard from raw data to interactive report. Free dataset included.',
-  ogImage: 'https://elitepickai.com/images/blog/sales-dashboard-hero.webp',
+  ogImage: 'https://elitepickai.com/og-image.jpg',
   heroImage,
   heroImageAlt: 'Power BI sales dashboard displaying revenue KPIs, trend charts, and regional analytics on an ultrawide monitor',
   author: 'Muneeb Shafiq',
@@ -82,7 +82,7 @@ export const powerbiSalesDashboardPost: BlogPost = {
       "@type": "WebPage",
       "@id": "https://elitepickai.com/blog/power-bi/build-sales-dashboard-tutorial"
     },
-    "image": "https://elitepickai.com/images/blog/sales-dashboard-hero.webp"
+    "image": "https://elitepickai.com/og-image.jpg"
   },
   excerpt: 'Follow along as we build a complete sales dashboard from raw data to interactive report. Covers data import, DAX measures, visual design, and interactivity with a free sample dataset.',
   featured: false,

@@ -27,9 +27,17 @@ export const n8nTool: Tool = {
     'API Integration Specialist',
     'Zapier Alternative Expert',
     'n8n CRM Automation',
-    'n8n AI Integration'
+    'n8n AI Integration',
+    'n8n Freelancer',
+    'hire n8n developer',
+    'n8n automation services',
+    'n8n workflow builder',
+    'n8n lead generation automation',
+    'business process automation',
+    'automate repetitive tasks n8n',
+    'n8n vs Zapier'
   ],
-  metaDescription: 'Professional n8n workflow automation. Connect apps, eliminate manual tasks, integrate AI—zero per-task costs. Zapier alternative expert. Book free automation audit.',
+  metaDescription: 'Hire an n8n expert to automate your business workflows — lead routing, CRM sync, invoice processing, and AI integrations. Self-hosted, zero per-task costs. Free audit.',
   heroImage: n8nHeroWorkflow,
   trustMetrics: [
     { label: 'Partner', value: 'n8n Certified Partner' },
