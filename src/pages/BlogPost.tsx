@@ -5,6 +5,7 @@ import { getBlogPostBySlug } from '@/data/blog';
 import NotFound from './NotFound';
 import PowerBIPillarContent from '@/components/blog/PowerBIPillarContent';
 import SalesDashboardContent from '@/components/blog/SalesDashboardContent';
+import N8nLeadGenerationContent from '@/components/blog/N8nLeadGenerationContent';
 import { Badge } from '@/components/ui/badge';
 import {
   Breadcrumb,
@@ -160,6 +161,9 @@ const BlogPost = () => {
               )}
               {post.categorySlug === 'power-bi' && post.slug === 'build-sales-dashboard-tutorial' && (
                 <SalesDashboardContent />
+              )}
+              {post.categorySlug === 'n8n-automation' && post.slug === 'lead-generation-automation-n8n-tutorial' && (
+                <N8nLeadGenerationContent />
               )}
             </article>
           </div>
