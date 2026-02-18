@@ -174,11 +174,11 @@ ${formData.additionalInfo || 'None'}
   return (
     <Layout>
       <SEOHelmet
-        title="Direct Order | AI & Data Science Services | ElitePick AI"
-        description="Place a direct order for data science, AI, and machine learning services from ElitePick AI. Skip Fiverr and work directly."
+        title="Hire n8n Expert & AI Developer | Direct Order | ElitePick AI"
+        description="Place a direct order for n8n workflow automation, Power BI dashboards, AI chatbots, or ML models. Skip Fiverr and work directly with ElitePick AI."
         canonical="https://elitepickai.com/order"
         ogType="website"
-        keywords="Direct Order, Hire Data Scientist, Custom AI Project, Machine Learning Services"
+        keywords="Hire n8n Developer, n8n Automation Order, Custom Workflow Automation, Power BI Dashboard Order, AI Chatbot Development, Direct Hire Data Scientist"
         structuredData={{
           "@context": "https://schema.org",
           "@type": "WebPage",

@@ -30,7 +30,7 @@ export const powerbiPillarPost: BlogPost = {
   canonicalUrl: 'https://elitepickai.com/blog/power-bi/ultimate-guide-custom-dashboards',
   ogTitle: 'The Ultimate Guide to Custom Power BI Dashboards for Business Intelligence',
   ogDescription: 'Transform raw data into executive-grade dashboards. A comprehensive guide covering data modeling, DAX patterns, visualization best practices, and deployment.',
-  ogImage: 'https://elitepickai.com/images/blog/power-bi-hero.webp',
+  ogImage: 'https://elitepickai.com/og-image.jpg',
   heroImage,
   heroImageAlt: 'Executive Power BI dashboard displaying real-time KPIs on an ultrawide monitor in a modern office',
   author: 'Muneeb Shafiq',
@@ -81,7 +81,7 @@ export const powerbiPillarPost: BlogPost = {
       "@type": "WebPage",
       "@id": "https://elitepickai.com/blog/power-bi/ultimate-guide-custom-dashboards"
     },
-    "image": "https://elitepickai.com/images/blog/power-bi-hero.webp"
+    "image": "https://elitepickai.com/og-image.jpg"
   },
   excerpt: 'Transform raw data into executive-grade dashboards. A comprehensive guide covering data modeling, DAX patterns, visualization best practices, and deployment.',
   featured: true,
