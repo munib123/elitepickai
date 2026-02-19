@@ -44,69 +44,59 @@ const BlogPost = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative">
-        <div className="aspect-[21/9] md:aspect-[3/1] w-full overflow-hidden">
-          <img
-            src={post.heroImage}
-            alt={post.heroImageAlt}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
-        </div>
-        <div className="absolute bottom-0 left-0 right-0 pb-8 md:pb-12">
-          <div className="container mx-auto px-4">
-            {/* Breadcrumbs */}
-            <Breadcrumb className="mb-4">
-              <BreadcrumbList>
-                {post.breadcrumbs.map((crumb, i) => (
-                  <BreadcrumbItem key={crumb.href}>
-                    {i > 0 && <BreadcrumbSeparator />}
-                    <BreadcrumbLink asChild>
-                      <Link to={crumb.href} className="text-primary-foreground/80 hover:text-primary-foreground">
-                        {crumb.label}
-                      </Link>
-                    </BreadcrumbLink>
-                  </BreadcrumbItem>
-                ))}
-                <BreadcrumbSeparator />
-                <BreadcrumbItem>
-                  <BreadcrumbPage className="text-primary-foreground font-medium truncate max-w-[200px] md:max-w-none">
-                    {post.title}
-                  </BreadcrumbPage>
+      <section className="bg-muted/30 border-b border-border py-10 md:py-16">
+        <div className="container mx-auto px-4">
+          {/* Breadcrumbs */}
+          <Breadcrumb className="mb-5">
+            <BreadcrumbList>
+              {post.breadcrumbs.map((crumb, i) => (
+                <BreadcrumbItem key={crumb.href}>
+                  {i > 0 && <BreadcrumbSeparator />}
+                  <BreadcrumbLink asChild>
+                    <Link to={crumb.href} className="text-muted-foreground hover:text-foreground">
+                      {crumb.label}
+                    </Link>
+                  </BreadcrumbLink>
                 </BreadcrumbItem>
-              </BreadcrumbList>
-            </Breadcrumb>
+              ))}
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage className="text-foreground font-medium truncate max-w-[200px] md:max-w-none">
+                  {post.title}
+                </BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
 
-            <Badge variant="secondary" className="mb-3">
-              {post.category}
-            </Badge>
-            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 max-w-4xl">
-              {post.headline}
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-4 max-w-2xl">
-              {post.subheadline}
-            </p>
-            <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-              <span className="flex items-center gap-1.5">
-                <User className="h-4 w-4" />
-                {post.author}
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Calendar className="h-4 w-4" />
-                Updated: {new Date(post.dateModified).toLocaleDateString('en-US', {
-                  month: 'short',
-                  year: 'numeric',
-                })}
-              </span>
-              <span className="flex items-center gap-1.5">
-                <Clock className="h-4 w-4" />
-                {post.readTime} read
-              </span>
-              <span className="flex items-center gap-1.5">
-                <BookOpen className="h-4 w-4" />
-                {post.level}
-              </span>
-            </div>
+          <Badge variant="secondary" className="mb-4">
+            {post.category}
+          </Badge>
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 max-w-4xl">
+            {post.headline}
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground mb-6 max-w-2xl">
+            {post.subheadline}
+          </p>
+          <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
+            <span className="flex items-center gap-1.5">
+              <User className="h-4 w-4" />
+              {post.author}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Calendar className="h-4 w-4" />
+              Updated: {new Date(post.dateModified).toLocaleDateString('en-US', {
+                month: 'short',
+                year: 'numeric',
+              })}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Clock className="h-4 w-4" />
+              {post.readTime} read
+            </span>
+            <span className="flex items-center gap-1.5">
+              <BookOpen className="h-4 w-4" />
+              {post.level}
+            </span>
           </div>
         </div>
       </section>
