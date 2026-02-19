@@ -38,7 +38,7 @@ const skills = [
 
 const stats = [
   { value: "15+", label: "Projects Completed" },
-  { value: "4.8", label: "Fiverr Rating", icon: Star },
+  { value: "4.8", label: "Client Rating", icon: Star },
   { value: "89%", label: "ML Accuracy Achieved" },
   { value: "50+", label: "Locations Analyzed" },
 ];
@@ -56,7 +56,7 @@ const Index = ({ startTour }: IndexProps) => {
     <Layout onStartTour={startTour}>
       <SEOHelmet
         title="n8n Automation Expert & AI Agency | Power BI Dashboards & Chatbots | ElitePick AI"
-        description="ElitePick AI builds n8n workflow automation, Power BI dashboards, and custom AI chatbots. Automate repetitive tasks, visualize your data, and deploy AI — rated 4.8★ on Fiverr."
+        description="ElitePick AI builds n8n workflow automation, Power BI dashboards, and custom AI chatbots. Automate repetitive tasks, visualize your data, and deploy AI — 4.8★ average client rating."
         canonical="https://elitepickai.com/"
         ogType="website"
         keywords="n8n Automation Expert, n8n Workflow Developer, n8n Freelancer, Workflow Automation Services, AI Agency, Data Science Agency, AI Consulting Firm, Power BI, AI Chatbot, Machine Learning, Python Automation, LangChain, RAG, ElitePick AI"
@@ -79,8 +79,7 @@ const Index = ({ startTour }: IndexProps) => {
               "url": "https://elitepickai.com/",
               "sameAs": [
                 "https://www.linkedin.com/in/muneeb-zehel",
-                "https://github.com/munib123",
-                "https://www.fiverr.com/elitepick_ai"
+                "https://github.com/munib123"
               ],
               "knowsAbout": [
                 "n8n Workflow Automation", "n8n", "Business Process Automation",
@@ -128,7 +127,7 @@ const Index = ({ startTour }: IndexProps) => {
             {/* Trust Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full mb-8 animate-fade-in">
               <Star className="h-4 w-4 text-primary fill-primary" />
-              <span className="text-sm text-primary font-medium">4.8★ Rated on Fiverr • 15+ Projects Delivered</span>
+              <span className="text-sm text-primary font-medium">4.8★ Client Rating • 15+ Projects Delivered</span>
             </div>
 
             {/* Main Headline */}
@@ -320,7 +319,7 @@ const Index = ({ startTour }: IndexProps) => {
                   },
                   {
                     icon: Star,
-                    title: "4.8★ Fiverr Rating",
+                    title: "4.8★ Client Rating",
                     description:
                       "15+ successful projects with consistent 5-star reviews. Your satisfaction is guaranteed.",
                   },

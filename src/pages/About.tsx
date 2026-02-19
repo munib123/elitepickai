@@ -24,7 +24,7 @@ const certifications = [
 const experience = [
   {
     role: 'Data Scientist and AI Engineer',
-    company: 'Fiverr',
+    company: 'ElitePick AI',
     period: 'May 2025 - Present',
     bullets: [
       'Completed 5 data analysis projects with an average client rating of 4.8/5.',
@@ -76,8 +76,7 @@ const personJsonLd = {
   "email": "muneebzehel@gmail.com",
   "sameAs": [
     "https://github.com/munib123",
-    "https://www.linkedin.com/in/muneeb-zehel/",
-    "https://www.fiverr.com/elitepick_ai"
+    "https://www.linkedin.com/in/muneeb-zehel/"
   ],
   "knowsAbout": [
     "n8n", "n8n Workflow Automation", "Workflow Automation", "Business Process Automation",
@@ -110,8 +109,8 @@ const personJsonLd = {
   ],
   "worksFor": {
     "@type": "Organization",
-    "name": "Fiverr",
-    "url": "https://www.fiverr.com/elitepick_ai"
+    "name": "ElitePick AI",
+    "url": "https://elitepickai.com"
   },
   "makesOffer": [
     {
@@ -227,7 +226,7 @@ const AboutPage = () => {
               <div className="bg-card border border-border rounded-xl p-6">
                 <h3 className="font-semibold text-foreground mb-2">Ready to Work Together?</h3>
                 <p className="text-sm text-muted-foreground mb-3">
-                  4.8★ rating on Fiverr with 15+ successful projects.
+                  4.8★ client rating across 15+ successful projects.
                 </p>
                 {/* Certification Badges */}
                 <CertificationBadges variant="compact" className="mb-4" />

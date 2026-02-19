@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Mail, ShoppingCart, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail, ShoppingCart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
@@ -27,7 +27,6 @@ const Footer = () => {
   const socials = [
     { name: 'GitHub', href: 'https://github.com/munib123', icon: Github },
     { name: 'LinkedIn', href: 'https://www.linkedin.com/in/muneeb-zehel/', icon: Linkedin },
-    { name: 'Fiverr', href: 'https://www.fiverr.com/elitepick_ai', icon: ExternalLink },
     { name: 'Email', href: '/contact', icon: Mail, isInternal: true },
   ];
 

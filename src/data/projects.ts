@@ -10,7 +10,7 @@ export interface Project {
   action: string;
   result: string;
   tools: string[];
-  fiverrLink: string;
+  linkedinLink: string;
   githubLink?: string;
   featured: boolean;
 }
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     action: 'Built a complete data analysis pipeline using Python with Pandas for data cleaning and transformation of 176,000+ records. Performed exploratory data analysis to identify key metrics and correlations. Created statistical visualizations using Seaborn and Matplotlib to reveal demographic patterns in verification outcomes. Developed interactive visual dashboards with monthly trend analysis, geographic segmentation, and failure reason categorization.',
     result: 'Delivered a dashboard that reduced compliance investigation time by enabling instant identification of high-risk segments. The client discovered that 23% of failures were concentrated in a specific document type, leading to process improvements. Monthly trend analysis revealed seasonal patterns, allowing for better resource allocation during peak periods.',
     tools: ['Python', 'NumPy', 'Pandas', 'Seaborn', 'Matplotlib'],
-    fiverrLink: 'https://www.fiverr.com/s/WEq1p1L',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/KPI-Decline-Analysis',
     featured: true
   },
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     action: 'Designed and implemented a robust ETL pipeline using Python with Pandas and NumPy for data processing. Connected to MySQL databases to centralize data from disparate location systems. Built automated data cleaning routines to handle missing values, outliers, and inconsistent formatting. Developed comprehensive Power BI dashboards featuring location comparison views, staff productivity metrics, and service completion rates.',
     result: 'Transformed weekly manual reporting (previously 15+ hours) into automated daily insights available in under 5 minutes. The dashboard enabled identification of 8 underperforming locations within the first month. Operations team reported 40% faster decision-making and improved resource allocation.',
     tools: ['Python', 'Pandas', 'NumPy', 'MySQL', 'Power BI'],
-    fiverrLink: 'https://www.fiverr.com/s/WEq1p1L',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/facility_management_system',
     featured: true
   },
@@ -60,7 +60,7 @@ export const projects: Project[] = [
     action: 'Architected and built a Python-based web application using Gradio for an intuitive conversational interface. Integrated Groq API for ultra-fast LLM inference, enabling real-time responses to complex travel queries. Leveraged Hugging Face models for enhanced natural language understanding. Implemented prompt engineering techniques for consistent, high-quality itinerary generation.',
     result: 'Created an AI assistant that generates comprehensive travel itineraries in under 30 seconds—compared to hours of manual research. The system handles complex multi-city trips with accommodation suggestions, activity recommendations, and time-optimized daily schedules. Successfully deployed on HF Spaces with consistent uptime.',
     tools: ['Python', 'Gradio', 'Groq API', 'Hugging Face', 'LLM Prompt Engineering'],
-    fiverrLink: 'https://www.fiverr.com/s/AyAErkq',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/Travel_Assistance_Chatbot',
     featured: true
   },
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     action: 'Performed comprehensive data cleaning and preprocessing using Pandas to handle the large-scale crime dataset. Used NumPy for efficient numerical computations. Developed SQL queries in MSSQL to aggregate and prepare data. Built interactive Power BI dashboards featuring time-series trend analysis, geographic heat maps, and crime category breakdowns.',
     result: 'Delivered a dashboard enabling stakeholders to identify high-risk zones within seconds rather than hours. The visualization revealed that 35% of certain crime types were concentrated in specific time windows, enabling targeted patrol scheduling recommendations.',
     tools: ['Power BI', 'Pandas', 'NumPy', 'MSSQL'],
-    fiverrLink: 'https://www.fiverr.com/s/vvj4gpZ',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     featured: false
   },
   {
@@ -91,7 +91,7 @@ export const projects: Project[] = [
     action: 'Implemented optimized SQL queries in MSSQL to efficiently process and aggregate large survey datasets. Used Pandas for detailed data manipulation and computing statistical summaries. Performed correlation analysis using NumPy. Created rich visualizations using Matplotlib and Seaborn.',
     result: 'Produced an insights report that revealed unexpected correlations between developer experience levels and framework preferences—information that directly informed the client\'s product roadmap. SQL query optimization reduced analysis processing time by 60%.',
     tools: ['Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'MSSQL'],
-    fiverrLink: 'https://www.fiverr.com/s/vvj4gpZ',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/Devs_Survey_2024',
     featured: false
   },
@@ -107,7 +107,7 @@ export const projects: Project[] = [
     action: 'Built a comprehensive data processing pipeline using Pandas and NumPy to handle high-volume transaction data. Developed SQL procedures in MSSQL for efficient data aggregation. Created dynamic Power BI reports featuring interactive time-series visualizations and drill-down functionality.',
     result: 'Enabled the analytics team to identify a 15% increase in specific transaction categories during holiday periods. The weekly pattern analysis revealed optimal times for fraud monitoring, reducing false positive alerts. Dashboard refresh time reduced from 4 hours to 15 minutes.',
     tools: ['Power BI', 'Pandas', 'NumPy', 'MSSQL'],
-    fiverrLink: 'https://www.fiverr.com/s/vvj4gpZ',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/Credit_card_transaction-_report',
     featured: false
   },
@@ -123,7 +123,7 @@ export const projects: Project[] = [
     action: 'Performed extensive feature engineering on historical loan application data. Trained and evaluated multiple ML models including Random Forest, LightGBM, and Logistic Regression using cross-validation. Built an interactive Streamlit web application with Plotly visualizations for risk scores and feature importance.',
     result: 'Achieved 97% accuracy in fraud detection, significantly outperforming the previous rule-based system (78% accuracy). The model correctly identified fraudulent patterns that would have resulted in $2.3M in potential losses. Fraud investigation time reduced by 65%.',
     tools: ['Python', 'Scikit-learn', 'LightGBM', 'Streamlit', 'Plotly'],
-    fiverrLink: 'https://www.fiverr.com/s/AyAErkq',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/Loan-Sherlock',
     featured: true
   },
@@ -139,7 +139,7 @@ export const projects: Project[] = [
     action: 'Implemented a Retrieval-Augmented Generation (RAG) architecture using Python. Built document processing pipelines to extract and chunk text. Created vector embeddings for semantic search. Integrated Google\'s Gemini API for high-quality natural language generation. Developed an intuitive Streamlit interface.',
     result: 'Delivered a system that reduces document search time from 30+ minutes to under 10 seconds per query. The RAG architecture ensures responses are grounded in actual document content, eliminating AI hallucination concerns. Solution tested on legal contracts, technical manuals, and research papers with consistent accuracy.',
     tools: ['Python', 'RAG Architecture', 'Streamlit', 'Gemini API', 'Vector Embeddings'],
-    fiverrLink: 'https://www.fiverr.com/s/AyAErkq',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/DocSpeak',
     featured: true
   },
@@ -155,7 +155,7 @@ export const projects: Project[] = [
     action: 'Developed a complex workflow using n8n that functions as an autonomous recruitment agent: Integrated JSearch and LinkedIn APIs via HTTP Request nodes to fetch real-time job postings. Implemented conditional logic (If nodes) to parse JSON data, filtering jobs to ensure they contained specific keywords while excluding unwanted titles. Connected the Snov.io API to programmatically hunt for recruiter email addresses. Utilized LangChain nodes powered by GPT-4o with two distinct agents: a Subject Line Agent for relevant, non-spammy subjects, and a Body Copy Agent to cross-reference resume JSON against Job Descriptions. The system automatically removes duplicates using Merge nodes, logs application data into Google Sheets, and dispatches emails via Gmail with resume attached.',
     result: 'This automation transformed a manual 40-hour/week process into a fully autonomous workflow. The system now processes and applies to qualified leads instantly upon execution. It ensures zero errors in addressing recruiters, eliminates duplicate applications, and delivers highly personalized content that significantly increases open and response rates compared to generic bulk applications.',
     tools: ['n8n', 'LangChain', 'GPT-4o', 'Snov.io API', 'Google Sheets', 'Gmail API', 'REST API'],
-    fiverrLink: 'https://www.fiverr.com/s/GzAGmw3',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/Cold_mail_workflow',
     featured: true
   }

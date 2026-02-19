@@ -175,7 +175,7 @@ ${formData.additionalInfo || 'None'}
     <Layout>
       <SEOHelmet
         title="Hire n8n Expert & AI Developer | Direct Order | ElitePick AI"
-        description="Place a direct order for n8n workflow automation, Power BI dashboards, AI chatbots, or ML models. Skip Fiverr and work directly with ElitePick AI."
+        description="Place a direct order for n8n workflow automation, Power BI dashboards, AI chatbots, or ML models. Work directly with ElitePick AI."
         canonical="https://elitepickai.com/order"
         ogType="website"
         keywords="Hire n8n Developer, n8n Automation Order, Custom Workflow Automation, Power BI Dashboard Order, AI Chatbot Development, Direct Hire Data Scientist"

@@ -65,16 +65,16 @@ const ProjectDetailPage = () => {
           "provider": {
             "@type": "Organization",
             "name": "ElitePick AI",
-            "url": "https://www.fiverr.com/elitepick_ai"
+            "url": "https://elitepickai.com"
           },
           "potentialAction": {
-            "@type": "OrderAction",
+            "@type": "ViewAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": project.fiverrLink,
-              "actionPlatform": "https://fiverr.com"
+              "urlTemplate": "https://www.linkedin.com/in/muneeb-zehel",
+              "actionPlatform": "https://linkedin.com"
             },
-            "name": "Order Similar Project"
+            "name": "Connect on LinkedIn"
           }
         }
       ]

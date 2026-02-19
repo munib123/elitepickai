@@ -74,7 +74,7 @@ const ToolDetail = () => {
         headline={tool.headline}
         subheadline={tool.subheadline}
         heroImage={tool.heroImage}
-        fiverrLink={tool.fiverrLink}
+        linkedinLink={tool.linkedinLink}
         toolSlug={tool.slug}
       />
 
@@ -106,7 +106,7 @@ const ToolDetail = () => {
       />
 
       {/* Section 9: Pricing Tiers */}
-      <PricingTiers pricing={tool.pricing} fiverrLink={tool.fiverrLink} />
+      <PricingTiers pricing={tool.pricing} linkedinLink={tool.linkedinLink} />
 
       {/* Section 10: Testimonials */}
       <ToolTestimonials testimonials={relevantTestimonials} />
@@ -117,7 +117,7 @@ const ToolDetail = () => {
       {/* Section 12: Final CTA */}
       <FinalCTA
         ctaBannerImage={tool.ctaBannerImage}
-        fiverrLink={tool.fiverrLink}
+        linkedinLink={tool.linkedinLink}
         toolSlug={tool.slug}
       />
     </Layout>

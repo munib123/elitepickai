@@ -7,11 +7,11 @@ interface HeroSectionProps {
   headline: string;
   subheadline: string;
   heroImage: string;
-  fiverrLink: string;
+  linkedinLink: string;
   toolSlug?: string;
 }
 
-const HeroSection = ({ headline, subheadline, heroImage, fiverrLink, toolSlug }: HeroSectionProps) => {
+const HeroSection = ({ headline, subheadline, heroImage, linkedinLink, toolSlug }: HeroSectionProps) => {
   const getBrandingContent = () => {
     if (toolSlug === 'n8n-automation') {
       return {
@@ -59,13 +59,13 @@ const HeroSection = ({ headline, subheadline, heroImage, fiverrLink, toolSlug }:
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                <a href={fiverrLink} target="_blank" rel="noopener noreferrer">
+                <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
                   {branding.ctaText}
                   <ExternalLink className="ml-2 h-5 w-5" />
                 </a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href={fiverrLink} target="_blank" rel="noopener noreferrer">
+                <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
                   View Samples
                   <ExternalLink className="ml-2 h-5 w-5" />
                 </a>

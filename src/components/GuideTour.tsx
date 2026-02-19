@@ -28,13 +28,13 @@ export const tourSteps: Step[] = [
     placement: 'top',
   },
   {
-    target: '.tour-fiverr-btn',
-    content: 'Click here to order directly on Fiverr with secure payment and milestone protection.',
+    target: '.tour-linkedin-btn',
+    content: 'Connect with us on LinkedIn to discuss your project, view our professional profile, and start a conversation.',
     placement: 'bottom',
   },
   {
     target: '.tour-order-btn',
-    content: 'Or place a direct order here for custom projects outside of Fiverr.',
+    content: 'Or place a direct order here for custom projects.',
     placement: 'bottom',
   },
   {

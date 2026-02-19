@@ -4,11 +4,11 @@ import { Button } from '@/components/ui/button';
 
 interface FinalCTAProps {
   ctaBannerImage: string;
-  fiverrLink: string;
+  linkedinLink: string;
   toolSlug?: string;
 }
 
-const FinalCTA = ({ ctaBannerImage, fiverrLink, toolSlug }: FinalCTAProps) => {
+const FinalCTA = ({ ctaBannerImage, linkedinLink, toolSlug }: FinalCTAProps) => {
   const getCtaContent = () => {
     if (toolSlug === 'n8n-automation') {
       return {
@@ -50,7 +50,7 @@ const FinalCTA = ({ ctaBannerImage, fiverrLink, toolSlug }: FinalCTAProps) => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-              <a href={fiverrLink} target="_blank" rel="noopener noreferrer">
+              <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
                 {content.buttonText}
                 <ExternalLink className="ml-2 h-5 w-5" />
               </a>

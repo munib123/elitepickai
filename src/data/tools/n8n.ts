@@ -42,7 +42,7 @@ export const n8nTool: Tool = {
   trustMetrics: [
     { label: 'Partner', value: 'n8n Certified Partner' },
     { label: 'Deployed', value: '300+ Workflows' },
-    { label: 'Rating', value: '4.9★ Fiverr Rating' },
+    { label: 'Rating', value: '4.9★ Client Rating' },
     { label: 'Automated', value: '50K+ Tasks/Month' }
   ],
   painPoints: [
@@ -299,6 +299,6 @@ export const n8nTool: Tool = {
     }
   ],
   ctaBannerImage: n8nCtaBanner,
-  fiverrLink: 'https://www.fiverr.com/s/AyAErkq',
+  linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
   icon: 'Workflow'
 };

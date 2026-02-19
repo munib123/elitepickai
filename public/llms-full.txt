@@ -10,7 +10,7 @@
 **Role:** AI & Data Science Agency
 **Location:** Available Worldwide
 **Status:** Accepting New Clients
-**Fiverr Rating:** 4.8★ with 15+ successful projects
+**Client Rating:** 4.8★ with 15+ successful projects
 
 We help businesses transform raw data into actionable insights and intelligent automation. Specializing in Power BI dashboards, machine learning models, and custom AI chatbots that drive real business results.
 
@@ -31,7 +31,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 
 ### Experience
 
-**Data Scientist and AI Engineer at Fiverr** (May 2025 - Present)
+**Data Scientist and AI Engineer at ElitePick AI** (May 2025 - Present)
 - Completed 5 data analysis projects with average 4.8/5 rating
 - Specialized in data visualization, statistical analysis, actionable insights
 
@@ -55,7 +55,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **Category:** Compliance Analytics
 **Tools:** Python, NumPy, Pandas, Seaborn, Matplotlib
 **GitHub:** https://github.com/munib123/KPI-Decline-Analysis
-**Fiverr:** https://www.fiverr.com/s/WEq1p1L
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Situation:** Financial institutions and fintech companies face significant regulatory pressure to maintain robust Know Your Customer (KYC) processes. A client was struggling to understand why certain customer segments had higher verification failure rates, leading to customer drop-off and potential compliance risks. They had accumulated over 176,000 verification records but lacked the analytical infrastructure to extract actionable insights from this data.
 
@@ -73,7 +73,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **Category:** Operations BI Dashboard
 **Tools:** Python, Pandas, NumPy, MySQL, Power BI
 **GitHub:** https://github.com/munib123/facility_management_system
-**Fiverr:** https://www.fiverr.com/s/WEq1p1L
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Situation:** A commercial cleaning services company operating across 50+ facility locations was drowning in spreadsheets and manual reports. Operations managers spent hours compiling weekly performance data, yet still lacked real-time visibility into cleaning quality metrics, staff efficiency, and service compliance.
 
@@ -91,7 +91,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **Category:** AI Agent Development
 **Tools:** Python, Gradio, Groq API, Hugging Face, LLM Prompt Engineering
 **GitHub:** https://github.com/munib123/Travel_Assistance_Chatbot
-**Fiverr:** https://www.fiverr.com/s/AyAErkq
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Situation:** Travel planning remains a time-consuming process where travelers spend an average of 10+ hours researching destinations, accommodations, and activities. A client wanted to create a differentiated travel service by offering AI-powered personalized itinerary generation that could understand natural language preferences.
 
@@ -109,7 +109,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **Category:** Public Safety Analytics
 **Tools:** Power BI, Pandas, NumPy, MSSQL
 **GitHub:** https://github.com/munib123/Budget-Management-System
-**Fiverr:** https://www.fiverr.com/s/vvj4gpZ
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Situation:** City planners, real estate developers, and community organizations in Chicago needed to understand crime patterns across neighborhoods to make informed decisions about resource allocation, property investment, and community safety initiatives.
 
@@ -127,7 +127,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **Category:** Survey Data Analysis
 **Tools:** Pandas, NumPy, Matplotlib, Seaborn, MSSQL
 **GitHub:** https://github.com/munib123/Devs_Survey_2024
-**Fiverr:** https://www.fiverr.com/s/vvj4gpZ
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Situation:** A technology organization conducting an annual developer survey had collected extensive response data but lacked the analytical capability to extract meaningful insights about technology trends, developer preferences, and industry shifts.
 
@@ -145,7 +145,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **Category:** Financial Analytics
 **Tools:** Power BI, Pandas, NumPy, MSSQL
 **GitHub:** https://github.com/munib123/Credit_card_transaction-_report
-**Fiverr:** https://www.fiverr.com/s/vvj4gpZ
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Situation:** A financial services company needed deeper visibility into credit card transaction patterns to identify spending trends, detect anomalies, and understand customer behavior. Their existing reporting was static and weekly.
 
@@ -163,7 +163,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **Category:** ML Fraud Detection
 **Tools:** Python, Scikit-learn, LightGBM, Streamlit, Plotly
 **GitHub:** https://github.com/munib123/Loan-Sherlock
-**Fiverr:** https://www.fiverr.com/s/AyAErkq
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Situation:** Financial institutions lose billions annually to loan fraud, with traditional rule-based detection systems catching only a fraction of fraudulent applications. A client needed a more sophisticated approach to identify potential fraud before disbursement.
 
@@ -181,7 +181,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **Category:** RAG/Document AI
 **Tools:** Python, RAG Architecture, Streamlit, Gemini API, Vector Embeddings
 **GitHub:** https://github.com/munib123/DocSpeak
-**Fiverr:** https://www.fiverr.com/s/AyAErkq
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Situation:** Organizations accumulate vast amounts of knowledge in PDF documents, DOCX files, and reports, but this information becomes siloed and difficult to access. A client needed a solution that would make their document repository conversationally accessible.
 
@@ -199,7 +199,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **Category:** n8n Workflow Automation
 **Tools:** n8n, LangChain, GPT-4o, Snov.io API, Google Sheets, Gmail API, REST API
 **GitHub:** https://github.com/munib123/Cold_mail_workflow
-**Fiverr:** https://www.fiverr.com/s/GzAGmw3
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Situation:** The traditional job application process is inefficient and repetitive. Manually searching for roles, finding recruiter contact information, and drafting personalized cover emails for every application consumes hours of valuable time, often leading to missed opportunities due to slow turnaround.
 
@@ -218,7 +218,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **URL:** https://elitepickai.com/services/power-bi-dashboard-expert
 **Headline:** Transform Your Raw Data Into Executive-Ready Visual Intelligence
 **Cluster:** Data Analytics
-**Fiverr:** https://www.fiverr.com/s/lj4XQKg
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 **Pricing:** Basic dashboards start at $100
 
 **Target Client:** Business owners, operations managers, and executives who have data trapped in spreadsheets but need visual dashboards to make faster, smarter decisions.
@@ -245,7 +245,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **URL:** https://elitepickai.com/services/tableau-consultant
 **Headline:** Professional-Grade Data Stories That Impress Stakeholders and Drive Decisions
 **Cluster:** Data Analytics
-**Fiverr:** https://www.fiverr.com/s/lj4XQKg
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Target Client:** Corporate teams, research departments, and data-driven organizations that have standardized on Tableau and need expert-level dashboard development.
 
@@ -271,7 +271,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **URL:** https://elitepickai.com/services/data-cleaning-services
 **Headline:** Turn Your Messy, Unusable Data Into Analysis-Ready Gold
 **Cluster:** Data Analytics
-**Fiverr:** https://www.fiverr.com/s/7Y8NZZx
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 **Pricing:** Quick Excel cleanups start at $100
 
 **Target Client:** Anyone frustrated with messy data—business analysts who can't trust their spreadsheets, researchers with inconsistent survey responses, marketers with duplicate customer records.
@@ -298,7 +298,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **URL:** https://elitepickai.com/services/exploratory-data-analysis
 **Headline:** Discover the Hidden Stories, Patterns, and Opportunities in Your Data
 **Cluster:** Data Analytics
-**Fiverr:** https://www.fiverr.com/s/7Y8NZZx
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 **Pricing:** Standard analysis reports start at $150
 
 **Target Client:** Researchers, students, startup founders, and business analysts who have collected data but don't know what it's telling them.
@@ -325,7 +325,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **URL:** https://elitepickai.com/services/custom-ai-chatbot-developer
 **Headline:** Build Intelligent Conversational AI That Understands Your Business
 **Cluster:** AI/ML
-**Fiverr:** https://www.fiverr.com/s/AyAErkq
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 **Pricing:** Simple FAQ bots start at $100, enterprise RAG systems quoted based on scope
 
 **Target Client:** Business owners who want to automate customer support, SaaS founders building AI features, enterprises needing internal knowledge assistants.
@@ -353,7 +353,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **URL:** https://elitepickai.com/services/fine-tuning-llm-services
 **Headline:** Customize Large Language Models to Speak Your Language
 **Cluster:** AI/ML
-**Fiverr:** https://www.fiverr.com/s/AyAErkq
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Target Client:** Tech companies needing domain-specific AI capabilities, enterprises with unique terminology or workflows, and innovators who need AI that goes beyond generic responses.
 
@@ -379,7 +379,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **URL:** https://elitepickai.com/services/machine-learning-engineer
 **Headline:** Build Predictive Models That See the Future and Protect Your Business
 **Cluster:** AI/ML
-**Fiverr:** https://www.fiverr.com/s/AyAErkq
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 **Pricing:** Simple classification models start at $100, complex production systems require custom quotes
 
 **Target Client:** Businesses that want to predict outcomes—customer churn, fraud risk, sales forecasts, loan defaults, equipment failures.
@@ -406,7 +406,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **URL:** https://elitepickai.com/services/python-automation-scripting
 **Headline:** Eliminate Repetitive Tasks and Reclaim Hours of Your Week
 **Cluster:** AI/ML
-**Fiverr:** https://www.fiverr.com/s/AyAErkq
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 **Pricing:** Simple scripts start at $100, complex multi-system automation workflows priced individually
 
 **Target Client:** Professionals drowning in repetitive tasks—data entry, report generation, file processing, web data collection, system integrations.
@@ -435,7 +435,7 @@ We help businesses transform raw data into actionable insights and intelligent a
 **URL:** https://elitepickai.com/tools/power-bi-dashboard-services
 **Headline:** Stop Guessing. Start Knowing.
 **Subheadline:** Transform your chaotic spreadsheets into crystal-clear, interactive Power BI dashboards that make decisions for you.
-**Fiverr:** https://www.fiverr.com/s/lj4XQKg
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Trust Metrics:**
 - 5-Star Rated
@@ -454,12 +454,12 @@ We help businesses transform raw data into actionable insights and intelligent a
 **URL:** https://elitepickai.com/tools/n8n-automation
 **Headline:** Automate Mission-Critical Workflows with Expert n8n Integrations
 **Subheadline:** Stop paying per task. Stop wrestling with API documentation. We build powerful, self-hosted n8n automations that connect your entire tech stack—running 24/7 without the “Zapier tax” or the technical headache.
-**Fiverr:** https://www.fiverr.com/s/AyAErkq
+**LinkedIn:** https://www.linkedin.com/in/muneeb-zehel
 
 **Trust Metrics:**
 - n8n Certified Partner
 - 300+ Workflows Deployed
-- 4.9★ Fiverr Rating
+- 4.9★ Client Rating
 - 50K+ Tasks Automated Monthly
 
 **Pricing Tiers:**
@@ -496,7 +496,6 @@ A step-by-step tutorial covering: importing and cleaning sales data with Power Q
 ## Contact Information
 
 **Email:** muneebzehel@gmail.com
-**Fiverr:** https://www.fiverr.com/elitepick_ai
 **GitHub:** https://github.com/munib123
 **LinkedIn:** https://www.linkedin.com/in/muneeb-zehel/
 

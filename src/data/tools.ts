@@ -87,7 +87,7 @@ export interface Tool {
   pricing: PricingTier[];
   faqs: FAQ[];
   ctaBannerImage: string;
-  fiverrLink: string;
+  linkedinLink: string;
   icon: string;
 }
 
@@ -359,7 +359,7 @@ export const tools: Tool[] = [
       }
     ],
     ctaBannerImage: powerbiCtaBanner,
-    fiverrLink: 'https://www.fiverr.com/s/lj4XQKg',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     icon: 'BarChart3'
   },
   n8nTool

@@ -125,8 +125,8 @@ const ServiceDetailPage = () => {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href={service.fiverrLink} target="_blank" rel="noopener noreferrer">
-                  Order on Fiverr
+                <a href={service.linkedinLink} target="_blank" rel="noopener noreferrer">
+                  Let's Connect on LinkedIn
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </a>
               </Button>
@@ -234,8 +234,8 @@ const ServiceDetailPage = () => {
                 </Button>
 
                 <Button asChild variant="outline" className="w-full mb-3">
-                  <a href={service.fiverrLink} target="_blank" rel="noopener noreferrer">
-                    Order on Fiverr
+                  <a href={service.linkedinLink} target="_blank" rel="noopener noreferrer">
+                    Let's Connect on LinkedIn
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>

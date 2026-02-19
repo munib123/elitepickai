@@ -65,7 +65,7 @@ const ChapterImage = ({ src, alt }: { src: string; alt: string }) => (
   </figure>
 );
 
-const CtaBanner = ({ variant }: { variant: 'consultation' | 'fiverr' }) => {
+const CtaBanner = ({ variant }: { variant: 'consultation' | 'linkedin' }) => {
   if (variant === 'consultation') {
     return (
       <div className="my-10 rounded-xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 p-6 md:p-8 text-center">
@@ -73,7 +73,7 @@ const CtaBanner = ({ variant }: { variant: 'consultation' | 'fiverr' }) => {
           🚀 Need a Custom Power BI Dashboard Built for Your Business?
         </h3>
         <p className="text-muted-foreground mb-4 max-w-xl mx-auto text-sm">
-          We have delivered enterprise-grade dashboards for businesses managing 50+ locations, 
+          We have delivered enterprise-grade dashboards for businesses managing 50+ locations,
           processing thousands of daily transactions, and monitoring critical KPIs in real-time.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
@@ -83,8 +83,8 @@ const CtaBanner = ({ variant }: { variant: 'consultation' | 'fiverr' }) => {
             </Link>
           </Button>
           <Button asChild variant="outline">
-            <a href="https://www.fiverr.com/s/lj4XQKg" target="_blank" rel="noopener noreferrer">
-              View Fiverr Packages <ExternalLink className="ml-2 h-4 w-4" />
+            <a href="https://www.linkedin.com/in/muneeb-zehel" target="_blank" rel="noopener noreferrer">
+              View LinkedIn Profile <ExternalLink className="ml-2 h-4 w-4" />
             </a>
           </Button>
         </div>
@@ -147,7 +147,7 @@ const PowerBIPillarContent = () => {
         </ol>
         <ExpertNote>
           <p className="font-semibold">Don't Have Time to Follow Along?</p>
-          <p>This guide is designed to teach you everything step by step. But if you need a professional dashboard built quickly, we specialize in custom Power BI development for businesses of all sizes. <Link to="/contact" className="text-primary hover:underline">Book a free consultation</Link> or check out our <a href="https://www.fiverr.com/s/lj4XQKg" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">dashboard packages on Fiverr</a>.</p>
+          <p>This guide is designed to teach you everything step by step. But if you need a professional dashboard built quickly, we specialize in custom Power BI development for businesses of all sizes. <Link to="/contact" className="text-primary hover:underline">Book a free consultation</Link> or connect with us on <a href="https://www.linkedin.com/in/muneeb-zehel" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">LinkedIn</a>.</p>
         </ExpertNote>
       </section>
 

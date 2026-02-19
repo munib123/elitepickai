@@ -20,9 +20,23 @@ import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = resolve(__dirname, '..');
 
-// Service account key path — override via env var if needed
-const SERVICE_KEY_PATH = process.env.GOOGLE_SERVICE_KEY_PATH
-  || 'C:\\Users\\eve\\Documents\\g-cloud-service-keys\\gen-lang-client-0174539489-28cc701b280c.json';
+// Inline service account credentials
+const INLINE_SERVICE_ACCOUNT = {
+  "type": "service_account",
+  "project_id": "gen-lang-client-0174539489",
+  "private_key_id": "28cc701b280c5d8e6605ffb1f69ce3ace0ae061b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDYRvOwKPeFg6zL\n9EHNcsNKtrhfx3zKtkETv+QvxhnR+zHTbs+Ub0bcHrIwEatIpO+jt5A1DpNU3UDG\nete2IHcXUpZG430vjM4oLKNq1mobOea5b77iXM6czJaJJVDzqn3p4AgrUdrm+5oS\n8ISFsyWfHfLczxTUqi4vhm3YEq01FlAt5pqNKyx063ZHd4h4FisL4bkFD4gcYfII\nTdNRHj771IHasprqVifQW5S6ZQ75QOxzzBX33pNDH1CEoIXxK/CyvJk83UWktZL2\n1aLaHYicaK5UvcxBHyj61VRk9oVkZK+Gjjms0epeuE1tzawYsFMwK6I8yVeqRl+I\n3nVcK5RfAgMBAAECggEAALTKmuqnVEJH0CquBFO5m4bZN0bZe3f44m2f+x/0eaEO\nWphkCSIL4zAeeNW173jKZ4hz6hhwFrjaO0uvZKLagLL+VqDribo1+h+bMQAePJSF\n0lkxEGApNI3ed/gtOX53Bsp6fFm6E0MDD8jFRgJ9vvVEE8CBWuhrWjBgL3JwKlo0\nwqiMuVMT3b94/n6hi5ghiWFwIBOKzWhoBwbVKQfltuxIBz9A8P51xStq5PmjVq5y\nS7yY1O1UWYw7AFnjiHLrCwzoV6RxA6W2EkHVcsmb7rxixXADIRXQWnBr9zNzv4mj\nuBoq4R5dStNjaF7Yg52b7YSXqU7Jq7BPzTHnJk7uwQKBgQD6cTcOHpNkcnNsiFWI\nTZ0xyv54aONqCS5RTEJGbgypz9pPXHdHkzpcJYZgd4C0P6zQJRFWTvmTOqCv6iE3\nHmBZlO/+jhfxfM78YR0DPaJGbsgNTzWwOw5mBN5q+NVTI4KBbmzZoBP2o0fG0a9d\na6dG4GXgPMOLkOnQQtSsSifGcQKBgQDdE6RTKXJ4EZ1uRZACSfZsrcciFpa62FXM\nemsHEadrhIFu3sqmyEXyZAde22Bj6a+m2tH+b0f1aeTZVAya+u2xeMYnLweIr2ge\n/xsRtYjAkbuJTsM+mUYRnIOWIqhvRmaobAEZIMlsU78zKPlceqUbtgdWdLgQ6Yg8\nIByDbzmPzwKBgD5gYmkG3okfJHZ8wmjvg956A8VzwmiPntSq3Lrz//1vgp1Pl3nh\nRqDay8xNF2ZNkbpJ8TaA9xJfgNQvyVQUIcVOHjRVqcsA3gDoIzTCbh+Cyhrehq29\nF8n7HnagQWmyp3ebTEsr3q0IYAE6CqaHAKPbkiQ2njGtxz6S1quO0LdRAoGBANph\nprdHf/2/WMYvDPxV14iveL/hlG9peAeO/d5zv+/jan/8sC5kM0QnL2iyR9sqYgru\nqPUvM+PnANr1vaXyLY5cAVF/kW+h5baIxVKPAlFHI/uUxCU3/xEyjIFoJv4Uix/f\n4I3T52SMrZh55ylFNYfUHhd3IMQEDEFobwIegrvdAoGAKBioyf61OlRyb2zvXc+f\nrnk/g2HsbDCuhdUanFJ89BwaizqzboX546o4qas+VOSM+ZjO26zjgTfiixJvS7Qg\nuRPgpbxsJOVPYS0k/GEvwZzyhbd27g6CI7EvljwEGr5O+YfIdIlIfDkJvMyvz3kt\npHS8LfOKricwkQMxbMQqYG8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "elitepickai-indexig@gen-lang-client-0174539489.iam.gserviceaccount.com",
+  "client_id": "105892538721399298478",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/elitepickai-indexig%40gen-lang-client-0174539489.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+};
+
+// Service account key path — override via env var if needed (fallback to inline)
+const SERVICE_KEY_PATH = process.env.GOOGLE_SERVICE_KEY_PATH || null;
 
 const SITEMAP_PATH = resolve(PROJECT_ROOT, 'public', 'sitemap.xml');
 const INDEXING_API_ENDPOINT = 'https://indexing.googleapis.com/v3/urlNotifications:publish';
@@ -180,17 +194,21 @@ async function main() {
   console.log('\n🔍 Google Indexing API — Automated URL Submission\n');
   console.log('─'.repeat(55));
   
-  // 1. Load service account
+  // 1. Load service account (inline credentials or from file)
   let serviceAccount;
-  try {
-    const keyPath = resolve(SERVICE_KEY_PATH);
-    serviceAccount = JSON.parse(readFileSync(keyPath, 'utf-8'));
-    console.log(`✅ Service account loaded: ${serviceAccount.client_email}`);
-  } catch (err) {
-    console.error(`❌ Failed to load service account key from: ${SERVICE_KEY_PATH}`);
-    console.error(`   Set GOOGLE_SERVICE_KEY_PATH env var or update the path in this script.`);
-    console.error(`   Error: ${err.message}`);
-    process.exit(1);
+  if (SERVICE_KEY_PATH) {
+    try {
+      const keyPath = resolve(SERVICE_KEY_PATH);
+      serviceAccount = JSON.parse(readFileSync(keyPath, 'utf-8'));
+      console.log(`✅ Service account loaded from file: ${serviceAccount.client_email}`);
+    } catch (err) {
+      console.error(`❌ Failed to load service account key from: ${SERVICE_KEY_PATH}`);
+      console.error(`   Error: ${err.message}`);
+      process.exit(1);
+    }
+  } else {
+    serviceAccount = INLINE_SERVICE_ACCOUNT;
+    console.log(`✅ Service account loaded (inline): ${serviceAccount.client_email}`);
   }
   
   // 2. Extract URLs from sitemap

@@ -81,7 +81,7 @@ const PillarLink = ({ chapter, label }: { chapter: string; label: string }) => (
   </div>
 );
 
-const CtaBanner = ({ variant }: { variant: 'consultation' | 'fiverr' }) => {
+const CtaBanner = ({ variant }: { variant: 'consultation' | 'linkedin' }) => {
   if (variant === 'consultation') {
     return (
       <div className="my-10 rounded-xl bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 p-6 md:p-8 text-center">
@@ -100,15 +100,15 @@ const CtaBanner = ({ variant }: { variant: 'consultation' | 'fiverr' }) => {
             </Link>
           </Button>
           <Button asChild variant="outline">
-            <a href="https://www.fiverr.com/s/lj4XQKg" target="_blank" rel="noopener noreferrer">
-              View Fiverr Packages <ExternalLink className="ml-2 h-4 w-4" />
+            <a href="https://www.linkedin.com/in/muneeb-zehel" target="_blank" rel="noopener noreferrer">
+              View LinkedIn Profile <ExternalLink className="ml-2 h-4 w-4" />
             </a>
           </Button>
         </div>
       </div>
     );
   }
-  if (variant === 'fiverr') {
+  if (variant === 'linkedin') {
     return (
       <div className="my-10 rounded-xl bg-gradient-to-r from-chart-2/10 to-chart-2/5 border border-chart-2/20 p-6 md:p-8 text-center">
         <h3 className="text-xl font-bold text-foreground mb-2">
@@ -116,11 +116,11 @@ const CtaBanner = ({ variant }: { variant: 'consultation' | 'fiverr' }) => {
         </h3>
         <p className="text-muted-foreground mb-4 max-w-xl mx-auto text-sm">
           Need a single dashboard page built fast? Or have a DAX formula that is not working?
-          Our Fiverr packages offer fast turnaround at transparent pricing. 4.8-star rating from 15+ completed projects.
+          Connect with us on LinkedIn to discuss your project needs. 4.8-star client rating from 15+ completed projects.
         </p>
         <Button asChild>
-          <a href="https://www.fiverr.com/s/lj4XQKg" target="_blank" rel="noopener noreferrer">
-            Order Our Power BI Packages on Fiverr <ExternalLink className="ml-2 h-4 w-4" />
+          <a href="https://www.linkedin.com/in/muneeb-zehel" target="_blank" rel="noopener noreferrer">
+            Connect on LinkedIn <ExternalLink className="ml-2 h-4 w-4" />
           </a>
         </Button>
       </div>
@@ -200,7 +200,7 @@ const SalesDashboardContent = () => {
         <ExpertNote>
           <p className="font-semibold">💡 Prefer to Skip the Build and Get the Result?</p>
           <p>If you want a professional sales dashboard built for your actual business data, we can have it ready in 3–5 business days.
-            Check out our <a href="https://www.fiverr.com/s/lj4XQKg" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Power BI Dashboard packages on Fiverr</a> or{' '}
+            Connect with us on <a href="https://www.linkedin.com/in/muneeb-zehel" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">LinkedIn</a> or{' '}
             <Link to="/contact" className="text-primary hover:underline">book a free consultation</Link> for custom enterprise solutions.
           </p>
         </ExpertNote>
@@ -972,7 +972,7 @@ Revenue 3M Avg =
         </div>
 
         <CtaBanner variant="consultation" />
-        <CtaBanner variant="fiverr" />
+        <CtaBanner variant="linkedin" />
       </section>
 
       <Separator className="my-10" />

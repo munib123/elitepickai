@@ -214,12 +214,12 @@ const ContactPage = () => {
               <p className="text-sm text-muted-foreground text-center mt-6">
                 We typically respond within 24 hours. For urgent matters, you can also reach us on{' '}
                 <a
-                  href="https://www.fiverr.com/s/bdXwDDa"
+                  href="https://www.linkedin.com/in/muneeb-zehel"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:underline"
                 >
-                  Fiverr
+                  LinkedIn
                 </a>
                 .
               </p>
@@ -240,7 +240,7 @@ const ContactPage = () => {
                 </div>
               </a>
               <a
-                href="https://www.fiverr.com/s/bdXwDDa"
+                href="https://www.linkedin.com/in/muneeb-zehel"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary/50 transition-colors"
@@ -249,8 +249,8 @@ const ContactPage = () => {
                   <MessageSquare className="h-5 w-5 text-accent" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Fiverr</p>
-                  <p className="text-sm text-muted-foreground">Chat on Fiverr</p>
+                  <p className="font-medium text-foreground">LinkedIn</p>
+                  <p className="text-sm text-muted-foreground">Connect on LinkedIn</p>
                 </div>
               </a>
             </div>

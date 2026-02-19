@@ -14,10 +14,10 @@ interface PricingTier {
 
 interface PricingTiersProps {
   pricing: PricingTier[];
-  fiverrLink: string;
+  linkedinLink: string;
 }
 
-const PricingTiers = ({ pricing, fiverrLink }: PricingTiersProps) => {
+const PricingTiers = ({ pricing, linkedinLink }: PricingTiersProps) => {
   const isEnterpriseTier = (tier: string) => tier.toLowerCase() === 'enterprise';
 
   return (
@@ -93,7 +93,7 @@ const PricingTiers = ({ pricing, fiverrLink }: PricingTiersProps) => {
                     }`}
                     variant={tier.popular ? 'default' : isEnterprise ? 'ghost' : 'outline'}
                   >
-                    <a href={fiverrLink} target="_blank" rel="noopener noreferrer">
+                    <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
                       {tier.popular ? `Order ${tier.tier} Package` : tier.cta}
                       <ExternalLink className="ml-2 h-4 w-4" />
                     </a>

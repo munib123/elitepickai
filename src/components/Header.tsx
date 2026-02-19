@@ -61,9 +61,9 @@ const Header = ({ onStartTour }: HeaderProps) => {
             <div className="tour-theme-toggle">
               <ThemeToggle />
             </div>
-            <Button asChild variant="outline" size="sm" className="tour-fiverr-btn">
-              <a href="https://www.fiverr.com/s/bdXwDDa" target="_blank" rel="noopener noreferrer">
-                Fiverr
+            <Button asChild variant="outline" size="sm" className="tour-linkedin-btn">
+              <a href="https://www.linkedin.com/in/muneeb-zehel" target="_blank" rel="noopener noreferrer">
+                LinkedIn
               </a>
             </Button>
             <Button asChild size="sm" className="tour-order-btn bg-primary text-primary-foreground hover:bg-primary/90">
@@ -92,8 +92,8 @@ const Header = ({ onStartTour }: HeaderProps) => {
                 </Link>)}
               <div className="flex flex-col gap-2 mt-2">
                 <Button asChild variant="outline">
-                  <a href="https://www.fiverr.com/s/bdXwDDa" target="_blank" rel="noopener noreferrer">
-                    Order on Fiverr
+                  <a href="https://www.linkedin.com/in/muneeb-zehel" target="_blank" rel="noopener noreferrer">
+                    Let's Connect on LinkedIn
                   </a>
                 </Button>
                 <Button asChild className="bg-primary text-primary-foreground">

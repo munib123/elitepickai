@@ -12,7 +12,7 @@ export interface Service {
   whyChooseMe: string;
   relatedProjects: string[];
   pricing: string;
-  fiverrLink: string;
+  linkedinLink: string;
   icon: string;
 }
 
@@ -44,7 +44,7 @@ export const services: Service[] = [
     whyChooseMe: 'With proven experience building dashboards for operations management across 50+ facility locations, financial transaction analysis, and urban crime pattern visualization, we understand that a dashboard is only valuable if it answers your specific business questions.',
     relatedProjects: ['facility-cleaning-operations', 'chicago-crime-analysis', 'credit-card-transaction'],
     pricing: 'Basic dashboards start at $100, with enterprise solutions available for complex multi-department requirements.',
-    fiverrLink: 'https://www.fiverr.com/s/lj4XQKg',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     icon: 'BarChart3'
   },
   {
@@ -74,7 +74,7 @@ export const services: Service[] = [
     whyChooseMe: 'Our experience spans from survey trend analysis with rich statistical visualizations to operational KPI tracking across enterprise environments.',
     relatedProjects: ['developers-survey-analysis', 'kyc-verification-analytics'],
     pricing: 'Tableau consulting is priced based on dashboard complexity and data source integration requirements.',
-    fiverrLink: 'https://www.fiverr.com/s/lj4XQKg',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     icon: 'PieChart'
   },
   {
@@ -104,7 +104,7 @@ export const services: Service[] = [
     whyChooseMe: 'We\'ve cleaned datasets with hundreds of thousands of records, handled multi-source data integration challenges, and built automated cleaning pipelines that save hours of manual work.',
     relatedProjects: ['kyc-verification-analytics', 'facility-cleaning-operations', 'chicago-crime-analysis'],
     pricing: 'Quick Excel cleanups start at $100, while complex multi-source data preparation projects are quoted individually.',
-    fiverrLink: 'https://www.fiverr.com/s/7Y8NZZx',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     icon: 'Sparkles'
   },
   {
@@ -134,7 +134,7 @@ export const services: Service[] = [
     whyChooseMe: 'From analyzing 176,000+ verification records for compliance patterns to extracting insights from developer surveys, we\'ve performed EDA on diverse datasets across industries.',
     relatedProjects: ['kyc-verification-analytics', 'developers-survey-analysis'],
     pricing: 'Standard analysis reports start at $150, with premium packages including advanced statistical testing.',
-    fiverrLink: 'https://www.fiverr.com/s/7Y8NZZx',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     icon: 'Search'
   },
   {
@@ -165,7 +165,7 @@ export const services: Service[] = [
     whyChooseMe: 'We\'ve built AI assistants ranging from autonomous travel planning agents deployed on Hugging Face Spaces to document Q&A systems that make PDFs conversationally searchable.',
     relatedProjects: ['tour-planning-ai-assistant', 'docspeak-rag'],
     pricing: 'Simple FAQ bots start at $100, while enterprise RAG systems with custom integrations are quoted based on scope.',
-    fiverrLink: 'https://www.fiverr.com/s/AyAErkq',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     icon: 'MessageSquare'
   },
   {
@@ -195,7 +195,7 @@ export const services: Service[] = [
     whyChooseMe: 'Our experience with Hugging Face models, Groq API for fast inference, and building production AI applications gives us end-to-end expertise in the LLM ecosystem.',
     relatedProjects: ['tour-planning-ai-assistant', 'docspeak-rag'],
     pricing: 'Fine-tuning projects are priced based on model type, training data volume, and complexity.',
-    fiverrLink: 'https://www.fiverr.com/s/AyAErkq',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     icon: 'Brain'
   },
   {
@@ -225,7 +225,7 @@ export const services: Service[] = [
     whyChooseMe: 'We\'ve built production fraud detection systems achieving 97% accuracy, demonstrating both the technical skills to engineer high-performing models and the practical judgment to deliver solutions that work.',
     relatedProjects: ['loan-sherlock-fraud-detection'],
     pricing: 'Simple classification models start at $100, with complex production systems requiring custom quotes.',
-    fiverrLink: 'https://www.fiverr.com/s/AyAErkq',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     icon: 'Cpu'
   },
   {
@@ -255,7 +255,7 @@ export const services: Service[] = [
     whyChooseMe: 'From building end-to-end data pipelines processing records from 50+ locations to automated analysis workflows handling hundreds of thousands of records, we\'ve engineered automation solutions that operate reliably in production.',
     relatedProjects: ['kyc-verification-analytics', 'facility-cleaning-operations', 'loan-sherlock-fraud-detection'],
     pricing: 'Simple scripts start at $100, with complex multi-system automation workflows priced individually.',
-    fiverrLink: 'https://www.fiverr.com/s/AyAErkq',
+    linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     icon: 'Zap'
   }
 ];
