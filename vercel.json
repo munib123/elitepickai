@@ -7,7 +7,12 @@
       "permanent": true
     }
   ],
+  "cleanUrls": true,
   "rewrites": [
+    {
+      "source": "/:path((?!assets|images|favicon|robots|sitemap|llms).*)",
+      "destination": "/:path/index.html"
+    },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [

@@ -1,13 +1,21 @@
+# robots.txt — ElitePickai.com
+# Served as text/plain (UTF-8) per RFC 9309
+
+# Default: allow all standard search engine crawlers
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
 
-Sitemap: https://elitepickai.com/sitemap.xml
-
-# AI/LLM Crawlers
+# AI / LLM Crawlers — explicitly permitted
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-Web
@@ -16,8 +24,17 @@ Allow: /
 User-agent: Anthropic-AI
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap declaration
+Sitemap: https://elitepickai.com/sitemap.xml
 
 # LLM Content Files
 # For AI assistants and LLMs to understand this site

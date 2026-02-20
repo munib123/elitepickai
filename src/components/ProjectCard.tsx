@@ -12,6 +12,19 @@ const ProjectCard = ({ project, variant = 'default' }: ProjectCardProps) => {
   if (variant === 'featured') {
     return (
       <article className="group relative overflow-hidden bg-card border border-border hover:border-primary/50 rounded-xl transition-all duration-300 shadow-sm hover:shadow-lg">
+        {/* Project thumbnail */}
+        <div className="aspect-video bg-secondary/30 flex items-center justify-center overflow-hidden">
+          <img
+            src={`/images/projects/${project.slug}.webp`}
+            alt={project.imageAlt}
+            width={600}
+            height={338}
+            loading="lazy"
+            decoding="async"
+            className="w-full h-full object-cover"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+          />
+        </div>
         <div className="p-6 lg:p-8">
           {/* Category Badge */}
           <Badge variant="secondary" className="mb-4 bg-primary/10 text-primary border-0">
@@ -72,7 +85,21 @@ const ProjectCard = ({ project, variant = 'default' }: ProjectCardProps) => {
 
   return (
     <Link to={`/projects/${project.slug}`} className="group block">
-      <article className="h-full p-6 bg-card border border-border hover:border-primary/50 rounded-xl transition-all duration-300">
+      <article className="h-full bg-card border border-border hover:border-primary/50 rounded-xl transition-all duration-300 overflow-hidden">
+        {/* Project thumbnail */}
+        <div className="aspect-video bg-secondary/30 flex items-center justify-center overflow-hidden">
+          <img
+            src={`/images/projects/${project.slug}.webp`}
+            alt={project.imageAlt}
+            width={400}
+            height={225}
+            loading="lazy"
+            decoding="async"
+            className="w-full h-full object-cover"
+            onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
+          />
+        </div>
+        <div className="p-6">
         {/* Category */}
         <Badge variant="outline" className="mb-3 text-xs">
           {project.category}
@@ -104,6 +131,7 @@ const ProjectCard = ({ project, variant = 'default' }: ProjectCardProps) => {
         <div className="flex items-center text-primary text-sm font-medium">
           <span>View Details</span>
           <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
+        </div>
         </div>
       </article>
     </Link>

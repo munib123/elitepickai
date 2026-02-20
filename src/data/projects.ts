@@ -13,6 +13,7 @@ export interface Project {
   linkedinLink: string;
   githubLink?: string;
   featured: boolean;
+  imageAlt: string;
 }
 
 export const projects: Project[] = [
@@ -30,7 +31,8 @@ export const projects: Project[] = [
     tools: ['Python', 'NumPy', 'Pandas', 'Seaborn', 'Matplotlib'],
     linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/KPI-Decline-Analysis',
-    featured: true
+    featured: true,
+    imageAlt: 'KYC Document Verification Analytics Dashboard built with Python, NumPy, Pandas, Seaborn, and Matplotlib — displaying 176,000+ compliance verification records with fraud detection insights'
   },
   {
     id: '2',
@@ -46,7 +48,8 @@ export const projects: Project[] = [
     tools: ['Python', 'Pandas', 'NumPy', 'MySQL', 'Power BI'],
     linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/facility_management_system',
-    featured: true
+    featured: true,
+    imageAlt: 'Facility Cleaning Operations Data Pipeline and Power BI Dashboard built with Python, Pandas, NumPy, and MySQL — real-time operations monitoring across 50+ facility locations'
   },
   {
     id: '3',
@@ -62,7 +65,8 @@ export const projects: Project[] = [
     tools: ['Python', 'Gradio', 'Groq API', 'Hugging Face', 'LLM Prompt Engineering'],
     linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/Travel_Assistance_Chatbot',
-    featured: true
+    featured: true,
+    imageAlt: 'Tour Planning AI Assistant autonomous travel agent built with Python, Gradio, Groq API, and Hugging Face — LLM-powered personalized itinerary generation interface'
   },
   {
     id: '4',
@@ -77,7 +81,8 @@ export const projects: Project[] = [
     result: 'Delivered a dashboard enabling stakeholders to identify high-risk zones within seconds rather than hours. The visualization revealed that 35% of certain crime types were concentrated in specific time windows, enabling targeted patrol scheduling recommendations.',
     tools: ['Power BI', 'Pandas', 'NumPy', 'MSSQL'],
     linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
-    featured: false
+    featured: false,
+    imageAlt: 'Chicago Crime Rate Analysis Dashboard built with Power BI, Pandas, NumPy, and MSSQL — interactive geographic hotspot identification and crime trend visualization'
   },
   {
     id: '5',
@@ -93,7 +98,8 @@ export const projects: Project[] = [
     tools: ['Pandas', 'NumPy', 'Matplotlib', 'Seaborn', 'MSSQL'],
     linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/Devs_Survey_2024',
-    featured: false
+    featured: false,
+    imageAlt: 'Developers Survey Analysis Report built with Pandas, NumPy, Matplotlib, Seaborn, and MSSQL — statistical visualizations of technology trends and developer preferences'
   },
   {
     id: '6',
@@ -109,7 +115,8 @@ export const projects: Project[] = [
     tools: ['Power BI', 'Pandas', 'NumPy', 'MSSQL'],
     linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/Credit_card_transaction-_report',
-    featured: false
+    featured: false,
+    imageAlt: 'Credit Card Transaction Analysis Dashboard built with Power BI, Pandas, NumPy, and MSSQL — interactive transaction trend visualization and anomaly detection'
   },
   {
     id: '7',
@@ -125,7 +132,8 @@ export const projects: Project[] = [
     tools: ['Python', 'Scikit-learn', 'LightGBM', 'Streamlit', 'Plotly'],
     linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/Loan-Sherlock',
-    featured: true
+    featured: true,
+    imageAlt: 'Loan Sherlock Fraud Detection System built with Python, Scikit-learn, LightGBM, Streamlit, and Plotly — 97% accuracy ML-based loan fraud prediction'
   },
   {
     id: '8',
@@ -141,7 +149,8 @@ export const projects: Project[] = [
     tools: ['Python', 'RAG Architecture', 'Streamlit', 'Gemini API', 'Vector Embeddings'],
     linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/DocSpeak',
-    featured: true
+    featured: true,
+    imageAlt: 'DocSpeak RAG Document Q&A System built with Python, RAG Architecture, Streamlit, Gemini API, and Vector Embeddings — conversational document access interface'
   },
   {
     id: '9',
@@ -157,7 +166,8 @@ export const projects: Project[] = [
     tools: ['n8n', 'LangChain', 'GPT-4o', 'Snov.io API', 'Google Sheets', 'Gmail API', 'REST API'],
     linkedinLink: 'https://www.linkedin.com/in/muneeb-zehel',
     githubLink: 'https://github.com/munib123/Cold_mail_workflow',
-    featured: true
+    featured: true,
+    imageAlt: 'Intelligent Job Application Bot built with n8n, LangChain, GPT-4o, and Snov.io API — end-to-end automated AI-powered recruitment workflow'
   }
 ];
 
