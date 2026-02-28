@@ -121,6 +121,12 @@ const Footer = () => {
                   Contact Us
                 </Link>
               </Button>
+              <Button asChild variant="outline" size="sm" className="w-full">
+                <a href="/Muneeb_Shafiq_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                  <FileDown className="mr-2 h-4 w-4" />
+                  Download Resume
+                </a>
+              </Button>
             </div>
           </div>
         </div>
