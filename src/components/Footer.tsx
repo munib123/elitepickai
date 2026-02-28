@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Github, Linkedin, Mail, ShoppingCart } from 'lucide-react';
+import { Github, Linkedin, Mail, ShoppingCart, FileDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Footer = () => {
