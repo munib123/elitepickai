@@ -1,111 +1,104 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ShoppingCart } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ThemeToggle from '@/components/ThemeToggle';
-import GuideButton from '@/components/GuideButton';
+import { SITE } from '@/site';
 
-interface HeaderProps {
-  onStartTour?: () => void;
-}
+const NAVIGATION = [
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '/about' },
+  { name: 'Contact', href: '/contact' },
+];
 
-const Header = ({ onStartTour }: HeaderProps) => {
+const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
-  const navigation = [{
-    name: 'Home',
-    href: '/'
-  }, {
-    name: 'Services',
-    href: '/services'
-  }, {
-    name: 'Tools',
-    href: '/tools'
-  }, {
-    name: 'Blog',
-    href: '/blog'
-  }, {
-    name: 'Projects',
-    href: '/projects'
-  }, {
-    name: 'About',
-    href: '/about'
-  }, {
-    name: 'Contact Us',
-    href: '/contact'
-  }];
-  const isActive = (href: string) => {
-    if (href === '/') return location.pathname === '/';
-    return location.pathname.startsWith(href);
-  };
-  return <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-lg">
+
+  const isActive = (href: string) =>
+    href === '/' ? location.pathname === '/' : location.pathname.startsWith(href);
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-lg">
       <nav aria-label="Main navigation" className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="tour-logo flex items-center gap-2">
-            <span className="text-xl font-bold text-gradient">|
-          </span>
-            <span className="hidden sm:inline text-lg font-semibold text-foreground">ElitePick Ai</span>
+          <Link to="/" className="flex items-center gap-2">
+            <span className="text-lg font-semibold text-foreground">{SITE.brand}</span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="tour-navigation hidden md:flex items-center gap-8">
-            {navigation.map(item => <Link key={item.name} to={item.href} className={`text-sm font-medium transition-colors hover:text-primary ${isActive(item.href) ? 'text-primary' : 'text-muted-foreground'}`}>
+          <div className="hidden md:flex items-center gap-8">
+            {NAVIGATION.map((item) => (
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`text-sm font-medium transition-colors hover:text-primary ${
+                  isActive(item.href) ? 'text-primary' : 'text-muted-foreground'
+                }`}
+              >
                 {item.name}
-              </Link>)}
+              </Link>
+            ))}
           </div>
 
-          {/* Theme Toggle & CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            {onStartTour && <GuideButton onClick={onStartTour} />}
-            <div className="tour-theme-toggle">
-              <ThemeToggle />
-            </div>
-            <Button asChild variant="outline" size="sm" className="tour-linkedin-btn">
-              <a href="https://www.linkedin.com/in/muneeb-zehel" target="_blank" rel="noopener noreferrer">
-                LinkedIn
+            <ThemeToggle />
+            {/* rel="me" on the profiles the site claims as the same person. */}
+            <Button asChild variant="outline" size="sm">
+              <a href={SITE.portfolio} target="_blank" rel="me noopener noreferrer">
+                Portfolio
               </a>
             </Button>
-            <Button asChild size="sm" className="tour-order-btn bg-primary text-primary-foreground hover:bg-primary/90">
-              <Link to="/order">
-                <ShoppingCart className="mr-2 h-4 w-4" />
-                Direct Order
-              </Link>
+            <Button asChild size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              <Link to="/contact">Get in touch</Link>
             </Button>
           </div>
 
-          {/* Mobile: Theme Toggle & Menu Button */}
           <div className="md:hidden flex items-center gap-2">
-            {onStartTour && <GuideButton onClick={onStartTour} />}
             <ThemeToggle />
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 text-foreground" aria-label="Toggle menu">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 text-foreground"
+              aria-label="Toggle menu"
+              aria-expanded={isMenuOpen}
+            >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && <div className="md:hidden border-t border-border py-4 animate-slide-up">
+        {isMenuOpen && (
+          <div className="md:hidden border-t border-border py-4 animate-slide-up">
             <div className="flex flex-col gap-4">
-              {navigation.map(item => <Link key={item.name} to={item.href} onClick={() => setIsMenuOpen(false)} className={`text-base font-medium transition-colors hover:text-primary px-2 py-1 ${isActive(item.href) ? 'text-primary' : 'text-muted-foreground'}`}>
+              {NAVIGATION.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={`text-base font-medium transition-colors hover:text-primary px-2 py-1 ${
+                    isActive(item.href) ? 'text-primary' : 'text-muted-foreground'
+                  }`}
+                >
                   {item.name}
-                </Link>)}
+                </Link>
+              ))}
               <div className="flex flex-col gap-2 mt-2">
                 <Button asChild variant="outline">
-                  <a href="https://www.linkedin.com/in/muneeb-zehel" target="_blank" rel="noopener noreferrer">
-                    Let's Connect on LinkedIn
+                  <a href={SITE.portfolio} target="_blank" rel="me noopener noreferrer">
+                    Portfolio
                   </a>
                 </Button>
                 <Button asChild className="bg-primary text-primary-foreground">
-                  <Link to="/order" onClick={() => setIsMenuOpen(false)}>
-                    <ShoppingCart className="mr-2 h-4 w-4" />
-                    Direct Order
+                  <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
+                    Get in touch
                   </Link>
                 </Button>
               </div>
             </div>
-          </div>}
+          </div>
+        )}
       </nav>
-    </header>;
+    </header>
+  );
 };
+
 export default Header;

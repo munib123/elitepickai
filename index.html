@@ -9,7 +9,7 @@
       gtag('js', new Date());
       gtag('config', 'G-8CJS1RRGE1');
     </script>
-    
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-DNS-Prefetch-Control" content="on" />
@@ -26,34 +26,41 @@
     <meta name="application-name" content="ElitePick AI" />
     <meta name="apple-mobile-web-app-title" content="ElitePick AI" />
 
-    <!-- Fallback SEO tags — react-helmet-async overrides per page -->
-    <title>ElitePick AI | AI & Data Science Agency — Dashboards, Chatbots & Automation</title>
-    <meta name="description" content="Transform raw data into actionable insights. Partner with a top-rated AI & Data Science Agency for Power BI Dashboards, Custom AI Chatbots, and Python Automation." />
-    <meta name="keywords" content="AI Agency, Data Science Agency, AI Consulting Firm, Power BI, AI Chatbot, Machine Learning, Python Automation, LangChain, RAG, ElitePick AI" />
-    <meta name="author" content="ElitePick AI" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <!--
+      Head defaults for the "/" route.
+
+      scripts/prerender.mjs REWRITES the seven tags below per route, taking the
+      values from seo.config.json, and fails the build if any of them stops
+      matching exactly once. Before that existed the prerender only replaced the
+      body, so all 26 generated pages shipped this head verbatim: same title, same
+      description, and a canonical pointing at "/" on every URL. react-helmet-async
+      does override these in a browser, but it cannot touch a file written by Node,
+      which is what a crawler reads.
+    -->
+    <title>ElitePick AI · Data and AI engineering by Muneeb Shafiq</title>
+    <meta name="description" content="The independent practice of Muneeb Shafiq, AI Engineer at Symufolk. Dashboards, retrieval systems and Python automation, built remotely from Lahore." />
+    <meta name="author" content="Muneeb Shafiq" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://elitepickai.com/" />
 
-    <!-- Open Graph (fallback) -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="ElitePick AI" />
-    <meta property="og:title" content="ElitePick AI | AI & Data Science Agency" />
-    <meta property="og:description" content="Top-rated AI & data science agency. Power BI Dashboards, AI Chatbots, ML Models & Python Automation." />
+    <meta property="og:title" content="ElitePick AI · Data and AI engineering by Muneeb Shafiq" />
+    <meta property="og:description" content="The independent practice of Muneeb Shafiq, AI Engineer at Symufolk. Dashboards, retrieval systems and Python automation, built remotely from Lahore." />
     <meta property="og:url" content="https://elitepickai.com/" />
     <meta property="og:image" content="https://elitepickai.com/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:locale" content="en_US" />
 
-    <!-- Twitter Card (fallback) -->
+    <!-- Twitter Card. No twitter:site or twitter:creator: there is no X account. -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@elitepickai" />
-    <meta name="twitter:creator" content="@elitepickai" />
-    <meta name="twitter:title" content="ElitePick AI | AI & Data Science Agency" />
-    <meta name="twitter:description" content="Top-rated AI & data science agency. Power BI Dashboards, AI Chatbots, ML Models & Python Automation." />
+    <meta name="twitter:title" content="ElitePick AI · Data and AI engineering by Muneeb Shafiq" />
+    <meta name="twitter:description" content="The independent practice of Muneeb Shafiq, AI Engineer at Symufolk. Dashboards, retrieval systems and Python automation, built remotely from Lahore." />
     <meta name="twitter:image" content="https://elitepickai.com/og-image.jpg" />
 
-    <!-- Static JSON-LD for non-JS crawlers (homepage) -->
+    <!-- Static JSON-LD for non-JS crawlers. Replaced per route by the prerender. -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -63,95 +70,28 @@
           "@id": "https://elitepickai.com/#website",
           "url": "https://elitepickai.com/",
           "name": "ElitePick AI",
-          "description": "AI & Data Science Agency — Dashboards, Chatbots & Automation",
-          "publisher": { "@id": "https://elitepickai.com/#organization" },
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://elitepickai.com/?s={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
+          "inLanguage": "en",
+          "publisher": { "@id": "https://elitepickai.com/#person" }
         },
         {
-          "@type": "Organization",
-          "@id": "https://elitepickai.com/#organization",
-          "name": "ElitePick AI",
-          "description": "AI & Data Science Agency specializing in Power BI dashboards, AI chatbots, machine learning, and Python automation.",
-          "url": "https://elitepickai.com/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://elitepickai.com/favicon-96x96.png",
-            "width": 96,
-            "height": 96
-          },
-          "image": "https://elitepickai.com/og-image.jpg",
-          "email": "muneebzehel@gmail.com",
-          "founder": {
-            "@type": "Person",
-            "name": "Muneeb Shafiq",
-            "jobTitle": "Founder & Lead AI Engineer",
-            "url": "https://elitepickai.com/about"
+          "@type": "Person",
+          "@id": "https://elitepickai.com/#person",
+          "name": "Muneeb Shafiq",
+          "jobTitle": "AI Engineer",
+          "url": "https://www.muneebshafiq.me",
+          "email": "mailto:muneebzehel@gmail.com",
+          "worksFor": { "@type": "Organization", "name": "Symufolk" },
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Lahore",
+            "addressCountry": "PK"
           },
           "sameAs": [
-            "https://www.linkedin.com/in/muneeb-zehel",
-            "https://github.com/munib123"
+            "https://github.com/munib123",
+            "https://www.linkedin.com/in/muneebshafiq-ai/",
+            "https://www.fiverr.com/muneebisfast",
+            "https://www.muneebshafiq.me"
           ]
-        },
-        {
-          "@type": "ProfessionalService",
-          "@id": "https://elitepickai.com/#service",
-          "name": "ElitePick AI — AI & Data Science Services",
-          "description": "Professional AI engineering services: custom chatbots, n8n workflow automation, Power BI dashboards, ML models, and LLM integration.",
-          "provider": { "@id": "https://elitepickai.com/#organization" },
-          "areaServed": "Worldwide",
-          "url": "https://elitepickai.com/services",
-          "serviceType": [
-            "AI Chatbot Development",
-            "Power BI Dashboard Development",
-            "Machine Learning Engineering",
-            "Data Cleaning & Analysis",
-            "Python Automation",
-            "RAG System Development",
-            "LLM Fine-tuning",
-            "n8n Workflow Automation"
-          ],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "AI & Data Science Services",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Power BI Dashboard Development",
-                  "url": "https://elitepickai.com/services/power-bi-dashboard-expert"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Custom AI Chatbot Development",
-                  "url": "https://elitepickai.com/services/custom-ai-chatbot-developer"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Machine Learning Engineering",
-                  "url": "https://elitepickai.com/services/machine-learning-engineer"
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "n8n Workflow Automation",
-                  "url": "https://elitepickai.com/tools/n8n-automation"
-                }
-              }
-            ]
-          }
         }
       ]
     }
@@ -162,16 +102,17 @@
     <div id="root"></div>
     <noscript>
       <div style="padding:2rem;text-align:center;font-family:system-ui,sans-serif">
-        <h1>ElitePick AI — AI &amp; Data Science Agency</h1>
-        <p>Power BI Dashboards, AI Chatbots, ML Models &amp; Python Automation.</p>
+        <h1>ElitePick AI</h1>
+        <p>The independent data and AI practice of Muneeb Shafiq, AI Engineer at Symufolk.</p>
         <nav style="margin-top:1rem">
-          <a href="/services" style="margin:0 1rem">Services</a>
-          <a href="/projects" style="margin:0 1rem">Projects</a>
-          <a href="/blog" style="margin:0 1rem">Blog</a>
+          <a href="/" style="margin:0 1rem">Home</a>
           <a href="/about" style="margin:0 1rem">About</a>
           <a href="/contact" style="margin:0 1rem">Contact</a>
         </nav>
-        <p style="margin-top:1rem">Please enable JavaScript to use this site, or visit our <a href="https://www.linkedin.com/in/muneeb-zehel">LinkedIn Profile</a>.</p>
+        <p style="margin-top:1rem">
+          The full case studies are at
+          <a href="https://www.muneebshafiq.me">muneebshafiq.me</a>.
+        </p>
       </div>
     </noscript>
     <script prerender type="module" src="/src/main.tsx"></script>

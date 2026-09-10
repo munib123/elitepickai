@@ -1,14 +1,10 @@
-# robots.txt — ElitePickai.com
+# robots.txt — elitepickai.com
 # Served as text/plain (UTF-8) per RFC 9309
 
-# Default: allow all standard search engine crawlers
 User-agent: *
 Allow: /
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
 
-# AI / LLM Crawlers — explicitly permitted
+# AI and LLM crawlers, explicitly permitted
 User-agent: GPTBot
 Allow: /
 
@@ -33,10 +29,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# Sitemap declaration
 Sitemap: https://elitepickai.com/sitemap.xml
-
-# LLM Content Files
-# For AI assistants and LLMs to understand this site
-# llms.txt: https://elitepickai.com/llms.txt
-# llms-full.txt: https://elitepickai.com/llms-full.txt

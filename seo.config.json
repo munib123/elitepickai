@@ -1,0 +1,23 @@
+{
+  "_comment": "Single source of truth for per-route head tags. Read by scripts/prerender.mjs (Node, readFileSync) and imported by the page components (Vite JSON import), so the head a crawler receives and the head react-helmet-async renders can never drift apart. Every route MUST appear here; prerender.mjs fails the build if one is missing.",
+  "baseUrl": "https://elitepickai.com",
+  "siteName": "ElitePick AI",
+  "ogImage": "/og-image.jpg",
+  "routes": {
+    "/": {
+      "title": "ElitePick AI · Data and AI engineering by Muneeb Shafiq",
+      "description": "The independent practice of Muneeb Shafiq, AI Engineer at Symufolk. Dashboards, retrieval systems and Python automation, built remotely from Lahore.",
+      "ogType": "website"
+    },
+    "/about": {
+      "title": "About · Muneeb Shafiq, AI Engineer · ElitePick AI",
+      "description": "Muneeb Shafiq, AI Engineer at Symufolk in Lahore. Certifications you can verify, client work you can check on Fiverr, and the full case studies on muneebshafiq.me.",
+      "ogType": "profile"
+    },
+    "/contact": {
+      "title": "Contact · ElitePick AI",
+      "description": "Get in touch about data and AI work. Email or the form here; I reply within one business day, from Lahore, UTC+5.",
+      "ogType": "website"
+    }
+  }
+}
