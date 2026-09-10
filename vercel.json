@@ -2,8 +2,68 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.elitepickai.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.elitepickai.com"
+        }
+      ],
       "destination": "https://elitepickai.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/projects/loan-sherlock-fraud-detection",
+      "destination": "https://www.muneebshafiq.me/projects/loan-sherlock",
+      "permanent": true
+    },
+    {
+      "source": "/projects/docspeak-rag",
+      "destination": "https://www.muneebshafiq.me/projects/docspeak",
+      "permanent": true
+    },
+    {
+      "source": "/projects/:slug*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services/:slug*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tools/:slug*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/projects",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/tools",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/order",
+      "destination": "/contact",
       "permanent": true
     }
   ],
@@ -13,7 +73,10 @@
       "source": "/:path((?!assets|images|favicon|robots|sitemap|llms).*)",
       "destination": "/:path/index.html"
     },
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ],
   "headers": [
     {

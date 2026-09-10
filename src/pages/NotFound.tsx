@@ -1,6 +1,5 @@
 import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
-import { Helmet } from 'react-helmet-async';
 import Layout from "@/components/Layout";
 import SEOHelmet from "@/components/SEOHelmet";
 
@@ -8,28 +7,35 @@ const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
-    console.error("404 Error: User attempted to access non-existent route:", location.pathname);
+    console.error("404: no route for", location.pathname);
   }, [location.pathname]);
 
   return (
     <Layout>
-      <SEOHelmet
-        title="Page Not Found — ElitePick AI"
-        description="The page you're looking for doesn't exist. Browse our AI & Data Science services, projects, and blog."
-        canonical="https://elitepickai.com/"
-      />
-      {/* Override robots to noindex 404 pages */}
-      <Helmet>
-        <meta name="robots" content="noindex, follow" />
-        <meta name="googlebot" content="noindex, follow" />
-      </Helmet>
-      <div className="flex min-h-[70vh] items-center justify-center">
+      {/* The site is three pages, so the 404 borrows the home head and adds noindex. */}
+      <SEOHelmet route="/" noindex />
+      <div className="flex min-h-[70vh] items-center justify-center px-4">
         <div className="text-center">
-          <h1 className="mb-4 text-4xl font-bold">404 — Page Not Found</h1>
-          <p className="mb-4 text-xl text-muted-foreground">Oops! The page you're looking for doesn't exist.</p>
-          <Link to="/" className="text-primary underline hover:text-primary/90">
-            Return to Home
-          </Link>
+          <h1 className="mb-4 text-4xl font-bold">Page not found</h1>
+          <p className="mb-6 text-lg text-muted-foreground max-w-md">
+            This site is three pages: home, about and contact. If you followed a link to a
+            services, tools, blog or project page, that work now lives on the portfolio.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link to="/" className="text-primary underline hover:text-primary/90">
+              Home
+            </Link>
+            <a
+              href="https://www.muneebshafiq.me/projects"
+              className="text-primary underline hover:text-primary/90"
+              rel="noopener noreferrer"
+            >
+              Case studies
+            </a>
+            <Link to="/contact" className="text-primary underline hover:text-primary/90">
+              Contact
+            </Link>
+          </div>
         </div>
       </div>
     </Layout>

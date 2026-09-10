@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, MessageSquare, Send, CheckCircle2 } from 'lucide-react';
+import { Mail, MessageSquare, Send, CheckCircle2, Linkedin } from 'lucide-react';
 import Layout from '@/components/Layout';
 import SEOHelmet from '@/components/SEOHelmet';
 import { Button } from '@/components/ui/button';
@@ -7,16 +7,21 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { toast } from 'sonner';
+import { SITE } from '@/site';
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "@id": "https://elitepickai.com/contact#contactpage",
+  url: "https://elitepickai.com/contact",
+  name: `Contact ${SITE.brand}`,
+  mainEntity: { "@id": "https://elitepickai.com/#person" },
+};
 
 const ContactPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
+  const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -27,34 +32,35 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     try {
+      // A Web3Forms access key is public by design: it identifies the inbox, not the
+      // account, and has to reach the browser for a client-side form to work at all.
+      // The committed value is the fallback so the form keeps working without any
+      // environment setup; set VITE_WEB3FORMS_API_KEY to override it after a rotation.
+      const accessKey =
+        (import.meta.env.VITE_WEB3FORMS_API_KEY as string | undefined) ??
+        'c894bb38-929a-4b87-877b-5c53a4809627';
+
       const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          access_key:
-            (import.meta.env.VITE_WEB3FORMS_API_KEY as string | undefined) ??
-            'c894bb38-929a-4b87-877b-5c53a4809627',
+          access_key: accessKey,
           name: formData.name,
           email: formData.email,
-          subject: formData.subject || 'New Contact Form Submission',
+          subject: formData.subject || 'New message from elitepickai.com',
           message: formData.message,
-          from_name: 'ElitePick AI Contact Form',
+          from_name: `${SITE.brand} contact form`,
         }),
       });
 
       const data = await response.json();
+      if (!data.success) throw new Error(data.message || 'Failed to send message');
 
-      if (data.success) {
-        setIsSubmitted(true);
-        toast.success('Message sent successfully!');
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      } else {
-        throw new Error(data.message || 'Failed to send message');
-      }
+      setIsSubmitted(true);
+      toast.success('Message sent.');
+      setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
-      toast.error('Failed to send message. Please try again.');
+      toast.error(`Could not send that. Email ${SITE.email} instead.`);
       console.error('Form submission error:', error);
     } finally {
       setIsSubmitting(false);
@@ -64,22 +70,16 @@ const ContactPage = () => {
   if (isSubmitted) {
     return (
       <Layout>
-        <SEOHelmet
-          title="Contact Us | Message Sent — ElitePick AI"
-          description="Thank you for contacting ElitePick AI. We'll get back to you within 24 hours."
-          canonical="https://elitepickai.com/contact"
-        />
+        <SEOHelmet route="/contact" noindex />
         <div className="min-h-[70vh] flex items-center justify-center">
           <div className="text-center max-w-md mx-auto px-4">
             <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <CheckCircle2 className="h-8 w-8 text-primary" />
             </div>
-            <h1 className="text-3xl font-bold text-foreground mb-4">Message Sent!</h1>
-            <p className="text-muted-foreground mb-8">
-              Thank you for reaching out. We'll get back to you within 24 hours.
-            </p>
+            <h1 className="text-3xl font-bold text-foreground mb-4">Message sent</h1>
+            <p className="text-muted-foreground mb-8">{SITE.replyTime}</p>
             <Button onClick={() => setIsSubmitted(false)} variant="outline">
-              Send Another Message
+              Send another
             </Button>
           </div>
         </div>
@@ -89,49 +89,20 @@ const ContactPage = () => {
 
   return (
     <Layout>
-      <SEOHelmet
-        title="Contact ElitePick AI | n8n Automation & AI Consultation"
-        description="Reach out to discuss n8n workflow automation, Power BI dashboards, or AI chatbot projects. Free consultation available. We respond within 24 hours."
-        ogType="website"
-        canonical="https://elitepickai.com/contact"
-        keywords="Contact n8n Expert, Hire Automation Specialist, AI Consultation, Data Science Agency, ElitePick AI, n8n Freelancer"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "ContactPage",
-          "name": "Contact ElitePick AI",
-          "description": "Get in touch with ElitePick AI for AI chatbots, Power BI dashboards, and ML models.",
-          "url": "https://elitepickai.com/contact",
-          "mainEntity": {
-            "@type": "Organization",
-            "name": "ElitePick AI",
-            "email": "muneebzehel@gmail.com",
-            "url": "https://elitepickai.com",
-            "contactPoint": {
-              "@type": "ContactPoint",
-              "contactType": "customer service",
-              "availableLanguage": "English",
-              "email": "muneebzehel@gmail.com"
-            }
-          }
-        }}
-      />
+      <SEOHelmet route="/contact" structuredData={structuredData} />
 
-      {/* Hero */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-foreground">Get in </span>
-              <span className="text-gradient">Touch</span>
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Get in touch</h1>
             <p className="text-xl text-muted-foreground">
-              Have a project in mind? Let's discuss how we can help you transform your data into actionable insights.
+              Tell me what the data is and what you need out of it. {SITE.replyTime} I work from{' '}
+              {SITE.location}, {SITE.timezone}.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contact Form */}
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto">
@@ -140,29 +111,21 @@ const ContactPage = () => {
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <MessageSquare className="h-5 w-5 text-primary" />
                 </div>
-                <h2 className="text-xl font-semibold text-foreground">Send a Message</h2>
+                <h2 className="text-xl font-semibold text-foreground">Send a message</h2>
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Your Name *</Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      placeholder="John Doe"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                    />
+                    <Label htmlFor="name">Your name *</Label>
+                    <Input id="name" name="name" value={formData.name} onChange={handleChange} required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email">Your Email *</Label>
+                    <Label htmlFor="email">Your email *</Label>
                     <Input
                       id="email"
                       name="email"
                       type="email"
-                      placeholder="john@example.com"
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -172,21 +135,15 @@ const ContactPage = () => {
 
                 <div className="space-y-2">
                   <Label htmlFor="subject">Subject</Label>
-                  <Input
-                    id="subject"
-                    name="subject"
-                    placeholder="How can we help you?"
-                    value={formData.subject}
-                    onChange={handleChange}
-                  />
+                  <Input id="subject" name="subject" value={formData.subject} onChange={handleChange} />
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Your Message *</Label>
+                  <Label htmlFor="message">Your message *</Label>
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder="Tell us about your project, data challenges, or any questions you have..."
+                    placeholder="What the data is, what you need out of it, and roughly when."
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
@@ -204,7 +161,7 @@ const ContactPage = () => {
                     'Sending...'
                   ) : (
                     <>
-                      Send Message
+                      Send message
                       <Send className="ml-2 h-4 w-4" />
                     </>
                   )}
@@ -212,45 +169,35 @@ const ContactPage = () => {
               </form>
 
               <p className="text-sm text-muted-foreground text-center mt-6">
-                We typically respond within 24 hours. For urgent matters, you can also reach us on{' '}
-                <a
-                  href="https://www.linkedin.com/in/muneeb-zehel"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline"
-                >
-                  LinkedIn
-                </a>
-                .
+                If the form gives you trouble, email {SITE.email} directly.
               </p>
             </div>
 
-            {/* Contact Info */}
             <div className="mt-8 grid md:grid-cols-2 gap-4">
               <a
-                href="mailto:muneebzehel@gmail.com"
+                href={`mailto:${SITE.email}`}
                 className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary/50 transition-colors"
               >
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="font-medium text-foreground">Email</p>
-                  <p className="text-sm text-muted-foreground">muneebzehel@gmail.com</p>
+                  <p className="text-sm text-muted-foreground break-all">{SITE.email}</p>
                 </div>
               </a>
               <a
-                href="https://www.linkedin.com/in/muneeb-zehel"
+                href={SITE.linkedin}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="me noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-card border border-border rounded-xl hover:border-primary/50 transition-colors"
               >
                 <div className="p-2 bg-accent/20 rounded-lg">
-                  <MessageSquare className="h-5 w-5 text-accent" />
+                  <Linkedin className="h-5 w-5 text-accent" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="font-medium text-foreground">LinkedIn</p>
-                  <p className="text-sm text-muted-foreground">Connect on LinkedIn</p>
+                  <p className="text-sm text-muted-foreground">in/muneebshafiq-ai</p>
                 </div>
               </a>
             </div>

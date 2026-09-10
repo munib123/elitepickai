@@ -1,91 +1,57 @@
 import { Helmet } from 'react-helmet-async';
+import seo from '../../seo.config.json';
 
 interface SEOHelmetProps {
-  title: string;
-  description: string;
-  canonical: string; // Full URL like https://elitepickai.com/about
-  ogType?: "website" | "article" | "profile";
-  ogImage?: string;
-  keywords?: string | string[];
-  author?: string;
-  publishedDate?: string; // ISO date for blog posts
-  modifiedDate?: string; // ISO date for blog posts
-  structuredData?: object; // JSON-LD schema
+  /** The route this page serves, e.g. "/about". Its head comes from seo.config.json. */
+  route: '/' | '/about' | '/contact';
+  /** 404 only: keep the page out of the index. */
+  noindex?: boolean;
+  /** JSON-LD for this route. */
+  structuredData?: object;
 }
 
-const BASE_URL = "https://elitepickai.com";
-const SITE_NAME = "ElitePick AI";
-const DEFAULT_OG_IMAGE = `${BASE_URL}/og-image.png`;
-const DEFAULT_AUTHOR = "ElitePick AI";
+const BASE_URL = seo.baseUrl;
 
-const SEOHelmet = ({
-  title,
-  description,
-  canonical,
-  ogType = "website",
-  ogImage,
-  keywords,
-  author = DEFAULT_AUTHOR,
-  publishedDate,
-  modifiedDate,
-  structuredData,
-}: SEOHelmetProps) => {
-  const fullImageUrl = ogImage
-    ? (ogImage.startsWith("http") ? ogImage : `${BASE_URL}${ogImage}`)
-    : DEFAULT_OG_IMAGE;
-
-  // Normalize keywords
-  const keywordsString = Array.isArray(keywords) ? keywords.join(", ") : (keywords || "");
+/**
+ * The head for a route, read from seo.config.json.
+ *
+ * scripts/prerender.mjs reads the same file and writes the same tags into the
+ * static HTML, which is what a crawler receives. Both sides taking their values
+ * from one file is what stops the two drifting: before this, every prerendered
+ * page shipped the homepage's title and a canonical pointing at "/", because the
+ * prerender only ever replaced the body and left this component to fix the head
+ * client-side, which it cannot do for a crawler reading raw HTML.
+ */
+const SEOHelmet = ({ route, noindex = false, structuredData }: SEOHelmetProps) => {
+  const meta = seo.routes[route];
+  const canonical = route === '/' ? `${BASE_URL}/` : `${BASE_URL}${route}`;
+  const imageUrl = `${BASE_URL}${seo.ogImage}`;
+  const robots = noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large';
 
   return (
     <Helmet>
-      {/* Primary Meta Tags */}
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      {keywordsString && <meta name="keywords" content={keywordsString} />}
-      <meta name="author" content={author} />
+      <title>{meta.title}</title>
+      <meta name="description" content={meta.description} />
       <link rel="canonical" href={canonical} />
 
-      {/* Indexing Directives */}
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-      <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-      <meta name="bingbot" content="index, follow" />
+      <meta name="robots" content={robots} />
 
-      {/* Open Graph */}
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:type" content={ogType} />
+      <meta property="og:title" content={meta.title} />
+      <meta property="og:description" content={meta.description} />
+      <meta property="og:type" content={meta.ogType} />
       <meta property="og:url" content={canonical} />
-      <meta property="og:image" content={fullImageUrl} />
-      <meta property="og:image:width" content="1200" />
-      <meta property="og:image:height" content="630" />
-      <meta property="og:site_name" content={SITE_NAME} />
+      <meta property="og:image" content={imageUrl} />
+      <meta property="og:site_name" content={seo.siteName} />
       <meta property="og:locale" content="en_US" />
 
-      {/* Article-specific OG tags for blog posts */}
-      {ogType === "article" && publishedDate && (
-        <meta property="article:published_time" content={publishedDate} />
-      )}
-      {ogType === "article" && modifiedDate && (
-        <meta property="article:modified_time" content={modifiedDate} />
-      )}
-      {ogType === "article" && (
-        <meta property="article:author" content={author} />
-      )}
-
-      {/* Twitter Card */}
+      {/* No twitter:site or twitter:creator: there is no X account for this site. */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@elitepickai" />
-      <meta name="twitter:creator" content="@elitepickai" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={fullImageUrl} />
+      <meta name="twitter:title" content={meta.title} />
+      <meta name="twitter:description" content={meta.description} />
+      <meta name="twitter:image" content={imageUrl} />
 
-      {/* Structured Data */}
       {structuredData && (
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
+        <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
       )}
     </Helmet>
   );
